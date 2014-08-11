@@ -1,0 +1,1884 @@
+// Define a TABLE
+#VAR(Table, TABLE)
+#VAR(engTable, TABLE)
+
+// Load and activate the table
+#ADDTBL("script/stafy.tbl", Table)
+#ADDTBL("script/english.tbl", engTable)
+#ACTIVETBL(Table)
+
+// Setup GBA pointers and Pointer Table
+#VAR(GBA, CUSTOMPOINTER)
+// Create our pointer type
+#CREATEPTR(GBA, "LINEAR", $-08000000, 32)
+
+#JMP($700000)
+
+//GAME NAME:		Densetsu no Stafy (GBA)
+
+//BLOCK #000 NAME:		Block 0 - Opening Movie (POINTER)
+
+//POINTER #0 @ $2169AC - STRING #0 @ $2747B4
+
+#WRITE(GBA,$2169AC)
+泳ぎを れんしゅうしながら<line>
+ロブじいさんの ところへ<line>
+いこう<wait><end>
+
+
+//POINTER #1 @ $2169B0 - STRING #1 @ $2747D8
+
+#WRITE(GBA,$2169B0)
+ヤドカリタに あいに行こう<line>
+どこに いるのかな?<wait><end>
+
+
+//POINTER #2 @ $2169B4 - STRING #2 @ $2747F5
+
+#WRITE(GBA,$2169B4)
+ヤドカリタの いえを さがして<line>
+とどけてあげよう<wait><end>
+
+
+//POINTER #3 @ $2169B8 - STRING #3 @ $274812
+
+#WRITE(GBA,$2169B8)
+さあ がんばって<line>
+ぼうけんを はじめてみよう!<wait><end>
+
+
+//POINTER #4 @ $2169BC - STRING #4 @ $27482E
+
+#WRITE(GBA,$2169BC)
+わるいヤツを おいかけて<line>
+ヤドカリタの なかまを さがそう<wait><end>
+
+
+//POINTER #5 @ $2169C0 - STRING #5 @ $274850
+
+#WRITE(GBA,$2169C0)
+なかまになった キョロスケと<line>
+いっしょに<line>
+ハデヒラリを さがしだそう<wait><end>
+
+
+//POINTER #6 @ $2169C4 - STRING #6 @ $274878
+
+#WRITE(GBA,$2169C4)
+ザショウクジラに<line>
+テンカイへかえる ほうほうを<line>
+きいてみよう<wait><end>
+
+
+//POINTER #7 @ $2169C8 - STRING #7 @ $27489C
+
+#WRITE(GBA,$2169C8)
+ザショウクジラに<line>
+のみこまれちゃった<line>
+とにかく たんけんしてみよう<wait><end>
+
+
+//POINTER #8 @ $2169CC - STRING #8 @ $2748C3
+
+#WRITE(GBA,$2169CC)
+いろんな ひとを たずねたら<line>
+ヤコウカガミを たすけるほうほうが<line>
+みつかるよ<wait><end>
+
+
+//POINTER #9 @ $2169D0 - STRING #9 @ $2748EF
+
+#WRITE(GBA,$2169D0)
+あばれているマモノを とっちめて<line>
+ザショウクジラの おなかを<line>
+なおしてあげよう<wait><end>
+
+
+//POINTER #10 @ $2169D4 - STRING #10 @ $27491C
+
+#WRITE(GBA,$2169D4)
+クリオレっていう なかまが<line>
+この海に いるはず<line>
+さがしてみよう<wait><end>
+
+
+//POINTER #11 @ $2169D8 - STRING #11 @ $274941
+
+#WRITE(GBA,$2169D8)
+氷づけにされた クリオレを<line>
+さがしだして たすけてあげよう<wait><end>
+
+
+//POINTER #12 @ $2169DC - STRING #12 @ $274963
+
+#WRITE(GBA,$2169DC)
+おんせんで クリオレの<line>
+氷を とかしてあげよう<wait><end>
+
+
+//POINTER #13 @ $2169E0 - STRING #13 @ $27497F
+
+#WRITE(GBA,$2169E0)
+クリオレを 氷づけにした<line>
+マモノを やっつけよう<wait><end>
+
+
+//POINTER #14 @ $2169E4 - STRING #14 @ $27499C
+
+#WRITE(GBA,$2169E4)
+気がつくと ふかーい<line>
+うみのそこ<line>
+だっしゅつほうほうは あるかな?<wait><end>
+
+
+//POINTER #15 @ $2169E8 - STRING #15 @ $2749C3
+
+#WRITE(GBA,$2169E8)
+ここから ぬけだすには<line>
+オオタルイカの たのみを<line>
+きいたほうが よさそう<wait><end>
+
+
+//POINTER #16 @ $2169EC - STRING #16 @ $2749ED
+
+#WRITE(GBA,$2169EC)
+タルイカが まもっていた トビラを<line>
+とおれるようになったよ<line>
+たんけんしてみよう<wait><end>
+
+
+//POINTER #17 @ $2169F0 - STRING #17 @ $274A1A
+
+#WRITE(GBA,$2169F0)
+<red>『<red>海<red>の<red>ね<red>い<red>ろ<red>』を さがしだして<line>
+ウォーツァルトに<line>
+とどけてあげよう<wait><end>
+
+
+//POINTER #18 @ $2169F4 - STRING #18 @ $274A4F
+
+#WRITE(GBA,$2169F4)
+ウォーツァルトの えんそうで<line>
+じゃまものが いなくなった!<line>
+出口は この先?<wait><end>
+
+
+//POINTER #19 @ $2169F8 - STRING #19 @ $274A7B
+
+#WRITE(GBA,$2169F8)
+ブランコは なんだかチョット<line>
+あやしいぞ!<line>
+だまされないように!<wait><end>
+
+
+//POINTER #20 @ $2169FC - STRING #20 @ $274AA1
+
+#WRITE(GBA,$2169FC)
+うそつき ブランコは<line>
+ボスの 子分?<line>
+さあ たいけつに むかうんだ!<wait><end>
+
+
+//POINTER #21 @ $216A00 - STRING #21 @ $274AC9
+
+#WRITE(GBA,$216A00)
+目のまえに 大きな ちんぼつせん<line>
+どうやら 中を とおらなくちゃ<line>
+いけないみたい<wait><end>
+
+
+//POINTER #22 @ $216A04 - STRING #22 @ $274AF7
+
+#WRITE(GBA,$216A04)
+カギを 4つ さがして<line>
+ドルフィーの なかまを<line>
+たすけだそう!<wait><end>
+
+
+//POINTER #23 @ $216A08 - STRING #23 @ $274B1C
+
+#WRITE(GBA,$216A08)
+マモノに 気付かれた!<line>
+おいつかれないように<line>
+いそいで にげよう!<wait><end>
+
+
+//POINTER #24 @ $216A0C - STRING #24 @ $274B43
+
+#WRITE(GBA,$216A0C)
+キョロスケが ガレキのむこうに<line>
+のこっちゃった<line>
+んもう しかたないなあ<wait><end>
+
+
+//POINTER #25 @ $216A10 - STRING #25 @ $274B6C
+
+#WRITE(GBA,$216A10)
+だいじな えものを にがされて<line>
+ボスは おこっているよ<line>
+おちついて やっつけよう<wait><end>
+
+
+//POINTER #26 @ $216A14 - STRING #26 @ $274B9A
+
+#WRITE(GBA,$216A14)
+かいていしんでんに とうちゃく<line>
+テンカイへの てがかりは<line>
+あるのかな?<wait><end>
+
+
+//POINTER #27 @ $216A18 - STRING #27 @ $274BC3
+
+#WRITE(GBA,$216A18)
+かいていしんでんの どこかにある<line>
+<red>『<red>よ<red>げ<red>ん<red>し<red>ょ<red>』を さがしだし、<line>
+平和な海を とりもどそう<wait><end>
+
+
+//POINTER #28 @ $216A1C - STRING #28 @ $274C04
+
+#WRITE(GBA,$216A1C)
+あやしいマモノに<line>
+ふきとばされたっ!<line>
+キョロスケは・・どこ?<wait><end>
+
+
+//POINTER #29 @ $216A20 - STRING #29 @ $274C28
+
+#WRITE(GBA,$216A20)
+せっかく キョロスケをみつけたのに<line>
+またどこかに 行っちゃった!<line>
+ひょっとすると ララコに!?<wait><end>
+
+
+//POINTER #30 @ $216A24 - STRING #30 @ $274C5D
+
+#WRITE(GBA,$216A24)
+やっと てにいれた<red>『<red>よ<red>げ<red>ん<red>し<red>ょ<red>』を<line>
+うばわれたよ!<line>
+また あの あやしいマモノだ!<wait><end>
+
+
+//POINTER #31 @ $216A28 - STRING #31 @ $274C9A
+
+#WRITE(GBA,$216A28)
+テンカイに にげた オーグラを<line>
+おいかけよう<wait><end>
+
+
+//POINTER #32 @ $216A2C - STRING #32 @ $274CB5
+
+#WRITE(GBA,$216A2C)
+オーグラの てしたを 3びき<line>
+やっつけて テンカイへ<line>
+いそごう<wait><end>
+
+
+//POINTER #33 @ $216A30 - STRING #33 @ $274CDA
+
+#WRITE(GBA,$216A30)
+なんとか テンカイに 入れたよ<line>
+オーグラは どこにひそんで<line>
+いるのだろう?<wait><end>
+
+
+//POINTER #34 @ $216A34 - STRING #34 @ $274D05
+
+#WRITE(GBA,$216A34)
+3かしょにいる にげおくれた<line>
+テンカイのなかまを<line>
+みんな たすけてあげよう<wait><end>
+
+
+//POINTER #35 @ $216A38 - STRING #35 @ $274D30
+
+#WRITE(GBA,$216A38)
+ついに オーグラと たいけつ!?<line>
+平和を とりもどすんだ!<wait><end>
+
+
+//POINTER #36 @ $216A3C - STRING #36 @ $274D52
+
+#WRITE(GBA,$216A3C)
+<red>『<red>セ<red>レ<red>ク<red>ト<red>+<red>ス<red>タ<red>ー<red>ト<red>』を押すと<line>
+あつめたものを セーブして<line>
+ステージセレクトに もどるよ<wait><end>
+
+
+//POINTER #37 @ $216A40 - STRING #37 @ $274630
+
+#ACTIVETBL(engTable)
+#WRITE(GBA,$216A40)
+//おおきな うみの そらたかく<line>
+//くものうえに 『テンカイ』という<line>
+//へいわな おうこくが ありました<wait><end>
+Surrounded by the vast sea there<line>
+exists a peaceful kingdom high in the<line>
+sky above the clouds called "Pufftop"<wait><end>
+#ACTIVETBL(Table)
+
+
+//POINTER #38 @ $216A44 - STRING #38 @ $274666
+
+#WRITE(GBA,$216A44)
+  そこにすむ スタフィーは<line>
+  テンカイの 王子サマ<wait><end>
+
+
+//POINTER #39 @ $216A48 - STRING #39 @ $274686
+
+#WRITE(GBA,$216A48)
+でも そそっかしいところがあって<line>
+しっぱいすることも たびたび<wait><end>
+
+
+//POINTER #40 @ $216A4C - STRING #40 @ $2746AA
+
+#WRITE(GBA,$216A4C)
+ある日 だいじな たからものを<line>
+はこんでいましたが・・・・・・<wait><end>
+
+
+//POINTER #41 @ $216A50 - STRING #41 @ $2746CE
+
+#WRITE(GBA,$216A50)
+うっかり たからものを<line>
+おとしてしまいました<wait><end>
+
+
+//POINTER #42 @ $216A54 - STRING #42 @ $2746E9
+
+#WRITE(GBA,$216A54)
+  す る と !<wait><end>
+
+
+//POINTER #43 @ $216A58 - STRING #43 @ $2746F6
+
+#WRITE(GBA,$216A58)
+「・・・・ワシのこえが きこえるか?」<wait><end>
+
+
+//POINTER #44 @ $216A5C - STRING #44 @ $27470D
+
+#WRITE(GBA,$216A5C)
+「おお どうやら ぶじのようじゃ!<line>
+ テンカイの ものじゃな?<line>
+ おちて来たのかの?」<wait><end>
+
+
+//POINTER #45 @ $216A60 - STRING #45 @ $27473E
+
+#WRITE(GBA,$216A60)
+「なんと!!テンカイの王子<line>
+ スタフィーとな!?」<wait><end>
+
+
+//POINTER #46 @ $216A64 - STRING #46 @ $27475C
+
+#WRITE(GBA,$216A64)
+「ここは ちいさな しまにある<line>
+ ワシの いえじゃ」<wait><end>
+
+
+//POINTER #47 @ $216A68 - STRING #47 @ $27477B
+
+#WRITE(GBA,$216A68)
+「ワシのなまえは ロブという<line>
+ 外はまだ ひどい あらしじゃから<line>
+ しばらくは やすんでいくがよいぞ」<wait><end>
+
+
+//POINTER #48 @ $216A6C - STRING #48 @ $274D9C
+
+#WRITE(GBA,$216A6C)
+オーグラは 『ふしぎなツボ』に<line>
+すいこまれて おとなしくなりました<line>
+ようやく すべての海と テンカイに<line>
+平和が もどったようです・・・・・<end>
+
+
+//POINTER #49 @ $216A70 - STRING #49 @ $274DE6
+
+#WRITE(GBA,$216A70)
+<start?>王さま<line>
+「よくぞ 『ふしぎなツボ』の<line>
+ ひみつが わかったな!」<line>
+   <clear><line>
+「だが おまえが あのツボを<line>
+ おとしたのが わるいのだぞ!」<line>
+   <clear><line>
+「オーグラは いたずらずきゆえ<line>
+ ふういんされておったのに!」<line>
+   <clear><line>
+「さて キョロスケよ! スタフィーを<line>
+ たすけてくれて かんしゃするぞ!」<line>
+   <clear><line>
+<start?>キョロスケ<line>
+「おいおい わかってねえな!<line>
+ ぜーんぶ オレさまのおかげで・・」<line>
+   <clear><line>
+<start?>王さま<line>
+「わかった わかった!<line>
+ ほうびに ほしいものがあるか?」<line>
+   <clear><line>
+<start?>キョロスケ<line>
+「もちろん テンカイの おたから!」<line>
+   <clear><line>
+<start?>王さま<line>
+「ほう そうか!<line>
+ スタフィー もってきなさい!」<end>
+
+
+//POINTER #50 @ $216A74 - STRING #50 @ $274F3D
+
+#WRITE(GBA,$216A74)
+<start?>王さま<line>
+「なんと! たからばこを ぜんぶ<line>
+ 海に おとしたというのか!?」<end>
+
+
+//POINTER #51 @ $216A78 - STRING #51 @ $274F68
+
+#WRITE(GBA,$216A78)
+<start?>キョロスケ<line>
+「オイッ! ホントか!? オレさまの<line>
+ おたから どうすんだ!」<end>
+
+
+//POINTER #52 @ $216A7C - STRING #52 @ $274F94
+
+#WRITE(GBA,$216A7C)
+<start?>王さま<line>
+「ほうびの はなしは たからばこを<line>
+ ぜんぶ あつめてからとしよう」<end>
+
+
+//POINTER #53 @ $216A80 - STRING #53 @ $274FC0
+
+#WRITE(GBA,$216A80)
+<start?>キョロスケ<line>
+「エーッ!! ちっくしょー・・・・」<end>
+
+
+//POINTER #54 @ $216A84 - STRING #54 @ $274FDD
+
+#WRITE(GBA,$216A84)
+「いそいで さがしにいくぞ!<line>
+ オラオラ!」<end>
+
+
+//POINTER #55 @ $216A88 - STRING #55 @ $274FF6
+
+#WRITE(GBA,$216A88)
+『ココカラ・・・ダセ・・・<line>
+  ・・マダマダ・・タクサン・・・<line>
+    イタズラシテヤル・・・』<end>
+
+
+//POINTER #56 @ $216A8C - STRING #56 @ $27502A
+
+#WRITE(GBA,$216A8C)
+また オーグラを こらしめて<line>
+『ふしぎなツボ』に<line>
+ふうじこめることが できました<end>
+
+
+//POINTER #57 @ $216A90 - STRING #57 @ $275056
+
+#WRITE(GBA,$216A90)
+<start?>王さま<line>
+「よくやったと いいたいが・・・・<line>
+ なぜ オーグラは にげたのだ?」<line>
+   <clear><line>
+<start?>キョロスケ<line>
+「知らねえなぁ マヌケなヤツが<line>
+ うっかり ツボを おとしたんだろ?」<line>
+   <clear><line>
+<start?>王さま<line>
+「そうかもしれん きをつけねばな!<line>
+ ところでスタフィー!」<end>
+
+
+//POINTER #58 @ $216A94 - STRING #58 @ $2750E8
+
+#WRITE(GBA,$216A94)
+「おとした たからばこを<line>
+ まだ あつめきっておらんではないか!<line>
+ はやく さがすのだ!」<end>
+
+
+//POINTER #59 @ $216A98 - STRING #59 @ $275119
+
+#WRITE(GBA,$216A98)
+<start?>キョロスケ<line>
+「なに? おい スタフィー!<line>
+ まだ あつまってないだと!?」<end>
+
+
+//POINTER #60 @ $216A9C - STRING #60 @ $275144
+
+#WRITE(GBA,$216A9C)
+「・・・バカヤロー! オレさまが<line>
+ もらうことになってんだ!<line>
+ はやくさがせっ! オラオラッ!」<end>
+
+
+//POINTER #61 @ $216AA0 - STRING #61 @ $275178
+
+#WRITE(GBA,$216AA0)
+『ク クソ・・・・・<line>
+ ・・・マタ シクジッタカ・・・<line>
+ モウイチド チャンスガ アレバ』<end>
+
+
+//POINTER #62 @ $216AA4 - STRING #62 @ $2751A9
+
+#WRITE(GBA,$216AA4)
+また オーグラを こらしめて<line>
+『ふしぎなツボ』に<line>
+ふうじこめることが できました<end>
+
+
+//POINTER #63 @ $216AA8 - STRING #63 @ $2751D5
+
+#WRITE(GBA,$216AA8)
+<start?>王さま<line>
+「とうとう すべての たからばこを<line>
+ あつめたか・・・よくやった!」<end>
+
+
+//POINTER #64 @ $216AAC - STRING #64 @ $275201
+
+#WRITE(GBA,$216AAC)
+「しかし キョロスケよ!<line>
+ せっかく ふうじこめた オーグラを<line>
+ にがしたのは おぬしだぞ!!」<line>
+    <clear><line>
+<start?>キョロスケ<line>
+「・・そういや ツボに ぶつかったな<line>
+ ま まあ・・・おわったコトだ!」<end>
+
+
+//POINTER #65 @ $216AB0 - STRING #65 @ $27526D
+
+#WRITE(GBA,$216AB0)
+「そんなコトより・・・<line>
+ さあ おたからを よこせっ!<line>
+ 今すぐ よこせっ!」<end>
+
+
+//POINTER #66 @ $216AB4 - STRING #66 @ $275298
+
+#WRITE(GBA,$216AB4)
+<start?>王さま<line>
+「・・・よかったな スタフィー!」<line>
+    <clear><line>
+「キョロスケは おまえの けらいに<line>
+ なってくれるらしい!」<line>
+    <clear><line>
+<start?>キョロスケ<line>
+「なにを いってんだ?<line>
+ ・・・・そんなワケ ねーだろ?」<line>
+    <clear><line>
+<start?>王さま<line>
+「たからは 王につかえる<line>
+ けらいたちの あかし!」<line>
+    <clear><line>
+「けらいにしか もつことはできん<line>
+ ・・・知らなかったか?」<end>
+
+
+//POINTER #67 @ $216AB8 - STRING #67 @ $275361
+
+#WRITE(GBA,$216AB8)
+<start?>キョロスケ<line>
+「な なんで オレさまが<line>
+ コイツの けらいなんかに!」<line>
+    <clear><line>
+「やっぱり オメェといると<line>
+ ろくなことがねえっ!<line>
+ ・・・どうしてくれるんだよっ!」<end>
+
+
+//POINTER #68 @ $216ABC - STRING #68 @ $2753C0
+
+#WRITE(GBA,$216ABC)
+『モウイチド ダレカ コノツボヲ<line>
+ ツキトバシテクレナイカナ?』<end>
+
+
+//POINTER #69 @ $216AC0 - STRING #69 @ $2753E3
+
+#WRITE(GBA,$216AC0)
+『・・・・・・・・・・・・・・・』<end>
+
+
+//POINTER #70 @ $216AC4 - STRING #70 @ $2778D0
+
+#WRITE(GBA,$216AC4)
+『ロブのどうくつ』<end>
+
+
+//POINTER #71 @ $216AC8 - STRING #71 @ $2778DB
+
+#WRITE(GBA,$216AC8)
+『サンゴショウ』<end>
+
+
+//POINTER #72 @ $216ACC - STRING #72 @ $2778E5
+
+#WRITE(GBA,$216ACC)
+『ザショウクジラ』<end>
+
+
+//POINTER #73 @ $216AD0 - STRING #73 @ $2778F0
+
+#WRITE(GBA,$216AD0)
+『氷の海』<end>
+
+
+//POINTER #74 @ $216AD4 - STRING #74 @ $2778F7
+
+#WRITE(GBA,$216AD4)
+『ふかい海』<end>
+
+
+//POINTER #75 @ $216AD8 - STRING #75 @ $2778FF
+
+#WRITE(GBA,$216AD8)
+『ちんぼつせん』<end>
+
+
+//POINTER #76 @ $216ADC - STRING #76 @ $277909
+
+#WRITE(GBA,$216ADC)
+『かいていしんでん』<end>
+
+
+//POINTER #77 @ $216AE0 - STRING #77 @ $277915
+
+#WRITE(GBA,$216AE0)
+『そらの海』<end>
+
+
+//POINTER #78 @ $216AE4 - STRING #78 @ $27791D
+
+#WRITE(GBA,$216AE4)
+『テンカイ』<end>
+
+
+//POINTER #79 @ $216AE8 - STRING #79 @ $2754F4
+
+#WRITE(GBA,$216AE8)
+オープニングデモ<line>
+海のねいろ<line>
+ファイルセレクト<line>
+ロブのどうくつ<line>
+サンゴショウ<end>
+
+
+//POINTER #80 @ $216AEC - STRING #80 @ $275520
+
+#WRITE(GBA,$216AEC)
+ザショウクジラ<line>
+氷の海<line>
+ふかい海<line>
+ちんぼつせん<line>
+かいていしんでん<end>
+
+
+//POINTER #81 @ $216AF0 - STRING #81 @ $275546
+
+#WRITE(GBA,$216AF0)
+そらの海<line>
+テンカイ<line>
+かいわがめん1<line>
+かいわがめん2<line>
+かいわがめん3<end>
+
+
+//POINTER #82 @ $216AF4 - STRING #82 @ $27556D
+
+#WRITE(GBA,$216AF4)
+かいわがめん4<line>
+ノルマたっせい<line>
+ボスは近いぞ<line>
+ボスとたいけつだ<line>
+バトル ボス!<end>
+
+
+//POINTER #83 @ $216AF8 - STRING #83 @ $27559A
+
+#WRITE(GBA,$216AF8)
+オーグラをたおせ<line>
+ミニゲーム<line>
+ゲームオーバー1<line>
+ゲームオーバー2<line>
+ポーズ<end>
+
+
+//POINTER #84 @ $216AFC - STRING #84 @ $2755C4
+
+#WRITE(GBA,$216AFC)
+ステージクリア<line>
+きねんしゃしん<line>
+ききゅう<line>
+もぐらタンク<line>
+なまずボート<end>
+
+
+//POINTER #85 @ $216B00 - STRING #85 @ $2755EC
+
+#WRITE(GBA,$216B00)
+まほう使い<line>
+きぐるみ<line>
+海のねいろ?<line>
+エンディング1<line>
+エンディング2<end>
+
+
+//POINTER #86 @ $216B04 - STRING #86 @ $275613
+
+#WRITE(GBA,$216B04)
+エンディング3<line>
+ステージセレクト<line>
+ずかん<line>
+おたからだ!<line>
+たからもの<end>
+
+
+//POINTER #87 @ $216B08 - STRING #87 @ $27563A
+
+#WRITE(GBA,$216B08)
+ミニゲームしゅう<line>
+スタッフロール<line>
+おまけだよ!<line>
+スタフィーダンス<end>
+
+
+//POINTER #88 @ $216B0C - STRING #88 @ $27565F
+
+#WRITE(GBA,$216B0C)
+<line>
+<end>
+
+
+//POINTER #89 @ $216B10 - STRING #89 @ $275664
+
+#WRITE(GBA,$216B10)
+ゲーム中の いろんな おんがくが<line>
+きけるぞ! よかったな!<end>
+
+
+//POINTER #90 @ $216B14 - STRING #90 @ $275684
+
+#WRITE(GBA,$216B14)
+このゲームを つくった<line>
+スタッフを みられるぞ!<end>
+
+
+//POINTER #91 @ $216B18 - STRING #91 @ $27569F
+
+#WRITE(GBA,$216B18)
+このゲームを つくった<line>
+スタッフを みられるぞ!<end>
+
+
+//POINTER #92 @ $216B1C - STRING #92 @ $2756BA
+
+#WRITE(GBA,$216B1C)
+さいしょの エンディングを<line>
+みられるぞ!<end>
+
+
+//POINTER #93 @ $216B20 - STRING #93 @ $2756D1
+
+#WRITE(GBA,$216B20)
+2しゅうめの エンディングを<line>
+みられるぞ!<end>
+
+
+//POINTER #94 @ $216B24 - STRING #94 @ $2756E9
+
+#WRITE(GBA,$216B24)
+たからものを すべてあつめた<line>
+エンディングを みられるぞ!<end>
+
+
+//POINTER #95 @ $216B28 - STRING #95 @ $275709
+
+#WRITE(GBA,$216B28)
+まだ オメェには みせられねえ!<line>
+もっと あそんでこい!<end>
+
+
+//POINTER #96 @ $216B2C - STRING #96 @ $275728
+
+#WRITE(GBA,$216B2C)
+<line>
+  <red>『<red>サ<red>ン<red>ゴ<red>シ<red>ョ<red>ウ<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「ワルモノに さらわれたっていう<line>
+ ヤドカリタの なかまを<line>
+ さがしてね」<end>
+
+
+//POINTER #97 @ $216B30 - STRING #97 @ $27578E
+
+#WRITE(GBA,$216B30)
+<line>
+  <red>『<red>ザ<red>シ<red>ョ<red>ウ<red>ク<red>ジ<red>ラ<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<red><end?><line>
+「クジラさんに<line>
+ すいこまれちゃったんだ・・・」<wait><scrollup><scrollup><line>
+「でも あなたの たすけをまつ<line>
+ なかまが いるわ! がんばって!」<end>
+
+
+//POINTER #98 @ $216B34 - STRING #98 @ $275816
+
+#WRITE(GBA,$216B34)
+<line>
+    <red>『<red>氷<red>の<red>海<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「クリオレを たすけてほしいって<line>
+ いってたっけ・・・<line>
+ さあ さがしに行きましょ!」<end>
+
+
+//POINTER #99 @ $216B38 - STRING #99 @ $27587B
+
+#WRITE(GBA,$216B38)
+<line>
+   <red>『<red>ふ<red>か<red>い<red>海<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「このへんに オオタルイカさんの<line>
+ へやがあるはずだけど・・?」<end>
+
+
+//POINTER #100 @ $216B3C - STRING #100 @ $2758D6
+
+#WRITE(GBA,$216B3C)
+<line>
+  <red>『<red>ち<red>ん<red>ぼ<red>つ<red>せ<red>ん<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「ボクトパスに とらえられた<line>
+ イルカたち・・<line>
+ 早く たすけだしてあげてね」<end>
+
+
+//POINTER #101 @ $216B40 - STRING #101 @ $27593E
+
+#WRITE(GBA,$216B40)
+<line>
+ <red>『<red>か<red>い<red>て<red>い<red>し<red>ん<red>で<red>ん<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「キョロスケは しんでんの中に<line>
+ 入っていったわよ?」<end>
+
+
+//POINTER #102 @ $216B44 - STRING #102 @ $27599E
+
+#WRITE(GBA,$216B44)
+<line>
+   <red>『<red>そ<red>ら<red>の<red>海<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「がんばって スタフィー!<line>
+ にっくき オーグラは<line>
+ すぐそこよ!」<end>
+
+
+//POINTER #103 @ $216B48 - STRING #103 @ $2759FC
+
+#WRITE(GBA,$216B48)
+<line>
+  <red>『<red>ロ<red>ブ<red>の<red>ど<red>う<red>く<red>つ<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「ヤドカリタさんが なくした<line>
+ おうちを さがしてあげてね」<end>
+
+
+//POINTER #104 @ $216B4C - STRING #104 @ $275A5D
+
+#WRITE(GBA,$216B4C)
+<line>
+    <red>『<red>氷<red>の<red>海<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「どうしたの? スタフィー<line>
+ 氷に とじこめられた クリオレを<line>
+ なんとかしてあげないと・・・」<end>
+
+
+//POINTER #105 @ $216B50 - STRING #105 @ $275AC7
+
+#WRITE(GBA,$216B50)
+<line>
+  <red>『<red>ち<red>ん<red>ぼ<red>つ<red>せ<red>ん<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「いそいで! スタフィー!<line>
+ マモノは すぐそこまで<line>
+ 来ているわ!!」<end>
+
+
+//POINTER #106 @ $216B54 - STRING #106 @ $275B2C
+
+#WRITE(GBA,$216B54)
+<line>
+ <red>『<red>か<red>い<red>て<red>い<red>し<red>ん<red>で<red>ん<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「<red>『<red>よ<red>げ<red>ん<red>し<red>ょ<red>』は どこに?<line>
+ しんでんの 中を たんけんすると<line>
+ みつかるかな?」<end>
+
+
+//POINTER #107 @ $216B58 - STRING #107 @ $275BAA
+
+#WRITE(GBA,$216B58)
+<line>
+   <red>『<red>テ<red>ン<red>カ<red>イ<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「スタフィー!!<line>
+ とうとうここまで<line>
+ やって来たわね!」<wait><scrollup><scrollup><scrollup><line>
+「オーグラは きょうてきよ!<line>
+ 気をひきしめて さいごの<line>
+ たたかいに のぞんでね!」<end>
+
+
+//POINTER #108 @ $216B5C - STRING #108 @ $275C3A
+
+#WRITE(GBA,$216B5C)
+<line>
+  <red>『<red>サ<red>ン<red>ゴ<red>シ<red>ョ<red>ウ<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「がんばって スタフィー!<line>
+ キョロスケと きょうりょくして<line>
+ ハデヒラリを さがしてね」<end>
+
+
+//POINTER #109 @ $216B60 - STRING #109 @ $275CA8
+
+#WRITE(GBA,$216B60)
+<line>
+  <red>『<red>サ<red>ン<red>ゴ<red>シ<red>ョ<red>ウ<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「がんばって スタフィー!<line>
+ キョロスケと きょうりょくして<line>
+ ハデヒラリを さがしてね」<end>
+
+
+//POINTER #110 @ $216B64 - STRING #110 @ $275D16
+
+#WRITE(GBA,$216B64)
+<line>
+  <red>『<red>ザ<red>シ<red>ョ<red>ウ<red>ク<red>ジ<red>ラ<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「いろんな なかまを さがしてね!<line>
+ きっと クジラさんの<line>
+ たすけかたが わかるはず!」<end>
+
+
+//POINTER #111 @ $216B68 - STRING #111 @ $275D87
+
+#WRITE(GBA,$216B68)
+<line>
+  <red>『<red>ザ<red>シ<red>ョ<red>ウ<red>ク<red>ジ<red>ラ<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「クジラさん・・<line>
+ 元気になると いいね・・」<wait><scrollup><scrollup><line>
+「スタフィーだけだよ<line>
+ あのマモノを たおせるのは!」<end>
+
+
+//POINTER #112 @ $216B6C - STRING #112 @ $275E05
+
+#WRITE(GBA,$216B6C)
+<line>
+    <red>『<red>氷<red>の<red>海<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「どうしたの? スタフィー<line>
+ 氷に とじこめられた クリオレを<line>
+ なんとかしてあげないと・・・」<end>
+
+
+//POINTER #113 @ $216B70 - STRING #113 @ $275E6F
+
+#WRITE(GBA,$216B70)
+<line>
+    <red>『<red>氷<red>の<red>海<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「どうしたの? スタフィー<line>
+ 氷に とじこめられた クリオレを<line>
+ なんとかしてあげないと・・・」<end>
+
+
+//POINTER #114 @ $216B74 - STRING #114 @ $275ED9
+
+#WRITE(GBA,$216B74)
+<line>
+    <red>『<red>氷<red>の<red>海<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「おつかれさま スタフィー!<line>
+ あとは ボエールンを<line>
+ たおすだけね! がんばって!」<end>
+
+
+//POINTER #115 @ $216B78 - STRING #115 @ $275F3E
+
+#WRITE(GBA,$216B78)
+<line>
+    <red>『<red>氷<red>の<red>海<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「どうしたの? スタフィー<line>
+ 氷に とじこめられた クリオレを<line>
+ なんとかしてあげないと・・・」<end>
+
+
+//POINTER #116 @ $216B7C - STRING #116 @ $275FA8
+
+#WRITE(GBA,$216B7C)
+<line>
+  <red>『<red>ち<red>ん<red>ぼ<red>つ<red>せ<red>ん<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「ボクトパスに とらえられた<line>
+ イルカたち・・<line>
+ 早く たすけだしてあげてね」<end>
+
+
+//POINTER #117 @ $216B80 - STRING #117 @ $276010
+
+#WRITE(GBA,$216B80)
+<line>
+  <red>『<red>ち<red>ん<red>ぼ<red>つ<red>せ<red>ん<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「ボクトパスに とらえられた<line>
+ イルカたち・・<line>
+ 早く たすけだしてあげてね」<end>
+
+
+//POINTER #118 @ $216B84 - STRING #118 @ $276078
+
+#WRITE(GBA,$216B84)
+<line>
+   <red>『<red>そ<red>ら<red>の<red>海<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「がんばって スタフィー!<line>
+ にっくき オーグラは<line>
+ すぐそこよ!」<end>
+
+
+//POINTER #119 @ $216B88 - STRING #119 @ $2760D6
+
+#WRITE(GBA,$216B88)
+<line>
+   <red>『<red>そ<red>ら<red>の<red>海<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「がんばって スタフィー!<line>
+ にっくき オーグラは<line>
+ すぐそこよ!」<end>
+
+
+//POINTER #120 @ $216B8C - STRING #120 @ $276134
+
+#WRITE(GBA,$216B8C)
+<line>
+   <red>『<red>ふ<red>か<red>い<red>海<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「ウォーツァルトさんは<line>
+ <red>『<red>海<red>の<red>ね<red>い<red>ろ<red>』を<line>
+ まだ さがしていますよ・・・」<end>
+
+
+//POINTER #121 @ $216B90 - STRING #121 @ $2761A4
+
+#WRITE(GBA,$216B90)
+<line>
+   <red>『<red>ふ<red>か<red>い<red>海<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「どんどん すすみましょ!<line>
+ でも どうすれば<line>
+ トビラは ひらくのかしら?」<end>
+
+
+//POINTER #122 @ $216B94 - STRING #122 @ $276207
+
+#WRITE(GBA,$216B94)
+<line>
+   <red>『<red>ふ<red>か<red>い<red>海<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「ブランタンが あなたを<line>
+ まちかまえて いるわ!」<wait><scrollup><scrollup><line>
+「でも 海のそこから<line>
+ だっしゅつするためには<line>
+ やっつけないと!」<end>
+
+
+//POINTER #123 @ $216B98 - STRING #123 @ $276288
+
+#WRITE(GBA,$216B98)
+<line>
+   <red>『<red>テ<red>ン<red>カ<red>イ<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「スタフィー!!<line>
+ とうとうここまで<line>
+ やって来たわね!」<wait><scrollup><scrollup><scrollup><line>
+「オーグラは きょうてきよ!<line>
+ 気をひきしめて さいごの<line>
+ たたかいに のぞんでね!」<end>
+
+
+//POINTER #124 @ $216B9C - STRING #124 @ $276318
+
+#WRITE(GBA,$216B9C)
+<line>
+   <red>『<red>テ<red>ン<red>カ<red>イ<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「スタフィー!!<line>
+ とうとうここまで<line>
+ やって来たわね!」<wait><scrollup><scrollup><scrollup><line>
+「オーグラは きょうてきよ!<line>
+ 気をひきしめて さいごの<line>
+ たたかいに のぞんでね!」<end>
+
+
+//POINTER #125 @ $216BA0 - STRING #125 @ $2763A8
+
+#WRITE(GBA,$216BA0)
+<line>
+   <red>『<red>テ<red>ン<red>カ<red>イ<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「スタフィー!!<line>
+ とうとうここまで<line>
+ やって来たわね!」<wait><scrollup><scrollup><scrollup><line>
+「オーグラは きょうてきよ!<line>
+ 気をひきしめて さいごの<line>
+ たたかいに のぞんでね!」<end>
+
+
+//POINTER #126 @ $216BA4 - STRING #126 @ $276438
+
+#WRITE(GBA,$216BA4)
+<line>
+   <red>『<red>テ<red>ン<red>カ<red>イ<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「スタフィー!!<line>
+ とうとうここまで<line>
+ やって来たわね!」<wait><scrollup><scrollup><scrollup><line>
+「オーグラは きょうてきよ!<line>
+ 気をひきしめて さいごの<line>
+ たたかいに のぞんでね!」<end>
+
+
+//POINTER #127 @ $216BA8 - STRING #127 @ $2764C8
+
+#WRITE(GBA,$216BA8)
+<line>
+   <red>『<red>テ<red>ン<red>カ<red>イ<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「スタフィー!!<line>
+ とうとうここまで<line>
+ やって来たわね!」<wait><scrollup><scrollup><scrollup><line>
+「オーグラは きょうてきよ!<line>
+ 気をひきしめて さいごの<line>
+ たたかいに のぞんでね!」<end>
+
+
+//POINTER #128 @ $216BAC - STRING #128 @ $276558
+
+#WRITE(GBA,$216BAC)
+<line>
+ <red>『<red>か<red>い<red>て<red>い<red>し<red>ん<red>で<red>ん<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「はぐれた キョロスケが しんぱい<line>
+ さがしてあげてね!」<end>
+
+
+//POINTER #129 @ $216BB0 - STRING #129 @ $2765BA
+
+#WRITE(GBA,$216BB0)
+<line>
+ <red>『<red>か<red>い<red>て<red>い<red>し<red>ん<red>で<red>ん<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「まほうで つくりだされた<line>
+ マモノがいるわ! まけないで!」<end>
+
+
+//POINTER #130 @ $216BB4 - STRING #130 @ $27661E
+
+#WRITE(GBA,$216BB4)
+<line>
+   <red>『<red>そ<red>ら<red>の<red>海<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「がんばって スタフィー!<line>
+ にっくき オーグラは<line>
+ すぐそこよ!」<end>
+
+
+//POINTER #131 @ $216BB8 - STRING #131 @ $27667C
+
+#WRITE(GBA,$216BB8)
+<line>
+  <red>『<red>ち<red>ん<red>ぼ<red>つ<red>せ<red>ん<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「いそいで! スタフィー!<line>
+ マモノは すぐそこまで<line>
+ 来ているわ!!」<end>
+
+
+//POINTER #132 @ $216BBC - STRING #132 @ $2766E1
+
+#WRITE(GBA,$216BBC)
+<line>
+   <red>『<red>テ<red>ン<red>カ<red>イ<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「スタフィー!!<line>
+ とうとうここまで<line>
+ やって来たわね!」<wait><scrollup><scrollup><scrollup><line>
+「オーグラは きょうてきよ!<line>
+ 気をひきしめて さいごの<line>
+ たたかいに のぞんでね!」<end>
+
+
+//POINTER #133 @ $216BC0 - STRING #133 @ $276771
+
+#WRITE(GBA,$216BC0)
+<line>
+    <red>『<red>氷<red>の<red>海<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「どうしたの? スタフィー<line>
+ 氷に とじこめられた クリオレを<line>
+ なんとかしてあげないと・・・」<end>
+
+
+//POINTER #134 @ $216BC4 - STRING #134 @ $2767DB
+
+#WRITE(GBA,$216BC4)
+<line>
+    <red>『<red>氷<red>の<red>海<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「どうしたの? スタフィー<line>
+ 氷に とじこめられた クリオレを<line>
+ なんとかしてあげないと・・・」<end>
+
+
+//POINTER #135 @ $216BC8 - STRING #135 @ $276845
+
+#WRITE(GBA,$216BC8)
+<line>
+  <red>『<red>ザ<red>シ<red>ョ<red>ウ<red>ク<red>ジ<red>ラ<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「クジラさんに<line>
+ すいこまれちゃったんだ・・・」<wait><scrollup><scrollup><line>
+「でも あなたの たすけをまつ<line>
+ なかまが いるわ! がんばって!」<end>
+
+
+//POINTER #136 @ $216BCC - STRING #136 @ $2768CB
+
+#WRITE(GBA,$216BCC)
+<line>
+  <red>『<red>ザ<red>シ<red>ョ<red>ウ<red>ク<red>ジ<red>ラ<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「いろんな なかまを さがしてね!<line>
+ きっと クジラさんの<line>
+ たすけかたが わかるはず!」<end>
+
+
+//POINTER #137 @ $216BD0 - STRING #137 @ $27693C
+
+#WRITE(GBA,$216BD0)
+<line>
+    <red>『<red>氷<red>の<red>海<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「おつかれさま スタフィー!<line>
+ あとは ボエールンを<line>
+ たおすだけね! がんばって!」<end>
+
+
+//POINTER #138 @ $216BD4 - STRING #138 @ $2769A1
+
+#WRITE(GBA,$216BD4)
+<line>
+   <red>『<red>ふ<red>か<red>い<red>海<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「タルイカさんたちが ふさいで<line>
+ いた 4つのトビラは どこに<line>
+ つながっているのかしら・・」<end>
+
+
+//POINTER #139 @ $216BD8 - STRING #139 @ $276A0C
+
+#WRITE(GBA,$216BD8)
+<line>
+   <red>『<red>ふ<red>か<red>い<red>海<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「どんどん すすみましょ!<line>
+ でも どうすれば<line>
+ トビラは ひらくのかしら?」<end>
+
+
+//POINTER #140 @ $216BDC - STRING #140 @ $276A6F
+
+#WRITE(GBA,$216BDC)
+<line>
+ <red>『<red>か<red>い<red>て<red>い<red>し<red>ん<red>で<red>ん<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「<red>『<red>よ<red>げ<red>ん<red>し<red>ょ<red>』は どこに?<line>
+ しんでんの 中を たんけんすると<line>
+ みつかるかな?」<end>
+
+
+//POINTER #141 @ $216BE0 - STRING #141 @ $276AED
+
+#WRITE(GBA,$216BE0)
+<line>
+ <red>『<red>か<red>い<red>て<red>い<red>し<red>ん<red>で<red>ん<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「<red>『<red>よ<red>げ<red>ん<red>し<red>ょ<red>』は どこに?<line>
+ しんでんの 中を たんけんすると<line>
+ みつかるかな?」<end>
+
+
+//POINTER #142 @ $216BE4 - STRING #142 @ $276B6B
+
+#WRITE(GBA,$216BE4)
+<line>
+   <red>『<red>テ<red>ン<red>カ<red>イ<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「スタフィー!!<line>
+ とうとうここまで<line>
+ やって来たわね!」<wait><scrollup><scrollup><scrollup><line>
+「オーグラは きょうてきよ!<line>
+ 気をひきしめて さいごの<line>
+ たたかいに のぞんでね!」<end>
+
+
+//POINTER #143 @ $216BE8 - STRING #143 @ $276BFB
+
+#WRITE(GBA,$216BE8)
+<line>
+   <red>『<red>テ<red>ン<red>カ<red>イ<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「スタフィー!!<line>
+ とうとうここまで<line>
+ やって来たわね!」<wait><scrollup><scrollup><scrollup><line>
+「オーグラは きょうてきよ!<line>
+ 気をひきしめて さいごの<line>
+ たたかいに のぞんでね!」<end>
+
+
+//POINTER #144 @ $216BEC - STRING #144 @ $276C8B
+
+#WRITE(GBA,$216BEC)
+<line>
+   <red>『<red>そ<red>ら<red>の<red>海<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「がんばって スタフィー!<line>
+ にっくき オーグラは<line>
+ すぐそこよ!」<end>
+
+
+//POINTER #145 @ $216BF0 - STRING #145 @ $276CE9
+
+#WRITE(GBA,$216BF0)
+<line>
+   <red>『<red>そ<red>ら<red>の<red>海<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「がんばって スタフィー!<line>
+ にっくき オーグラは<line>
+ すぐそこよ!」<end>
+
+
+//POINTER #146 @ $216BF4 - STRING #146 @ $276D47
+
+#WRITE(GBA,$216BF4)
+<line>
+   <red>『<red>そ<red>ら<red>の<red>海<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「がんばって スタフィー!<line>
+ にっくき オーグラは<line>
+ すぐそこよ!」<end>
+
+
+//POINTER #147 @ $216BF8 - STRING #147 @ $276DA5
+
+#WRITE(GBA,$216BF8)
+<line>
+  <red>『<red>ロ<red>ブ<red>の<red>ど<red>う<red>く<red>つ<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「たからものは どれだけ<line>
+ みつかったのかしら?<line>
+ がんばって ぼうけんしてね!」<end>
+
+
+//POINTER #148 @ $216BFC - STRING #148 @ $276E12
+
+#WRITE(GBA,$216BFC)
+<line>
+  <red>『<red>サ<red>ン<red>ゴ<red>シ<red>ョ<red>ウ<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「たからものは どれだけ<line>
+ みつかったのかしら?<line>
+ がんばって ぼうけんしてね!」<end>
+
+
+//POINTER #149 @ $216C00 - STRING #149 @ $276E7C
+
+#WRITE(GBA,$216C00)
+<line>
+  <red>『<red>ザ<red>シ<red>ョ<red>ウ<red>ク<red>ジ<red>ラ<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「たからものは どれだけ<line>
+ みつかったのかしら?<line>
+ がんばって ぼうけんしてね!」<end>
+
+
+//POINTER #150 @ $216C04 - STRING #150 @ $276EE9
+
+#WRITE(GBA,$216C04)
+<line>
+    <red>『<red>氷<red>の<red>海<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「たからものは どれだけ<line>
+ みつかったのかしら?<line>
+ がんばって ぼうけんしてね!」<end>
+
+
+//POINTER #151 @ $216C08 - STRING #151 @ $276F4C
+
+#WRITE(GBA,$216C08)
+<line>
+   <red>『<red>ふ<red>か<red>い<red>海<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「たからものは どれだけ<line>
+ みつかったのかしら?<line>
+ がんばって ぼうけんしてね!」<end>
+
+
+//POINTER #152 @ $216C0C - STRING #152 @ $276FB1
+
+#WRITE(GBA,$216C0C)
+<line>
+  <red>『<red>ち<red>ん<red>ぼ<red>つ<red>せ<red>ん<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「たからものは どれだけ<line>
+ みつかったのかしら?<line>
+ がんばって ぼうけんしてね!」<end>
+
+
+//POINTER #153 @ $216C10 - STRING #153 @ $27701B
+
+#WRITE(GBA,$216C10)
+<line>
+ <red>『<red>か<red>い<red>て<red>い<red>し<red>ん<red>で<red>ん<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「たからものは どれだけ<line>
+ みつかったのかしら?<line>
+ がんばって ぼうけんしてね!」<end>
+
+
+//POINTER #154 @ $216C14 - STRING #154 @ $27708A
+
+#WRITE(GBA,$216C14)
+<line>
+   <red>『<red>そ<red>ら<red>の<red>海<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「たからものは どれだけ<line>
+ みつかったのかしら?<line>
+ がんばって ぼうけんしてね!」<end>
+
+
+//POINTER #155 @ $216C18 - STRING #155 @ $2770EF
+
+#WRITE(GBA,$216C18)
+<line>
+   <red>『<red>テ<red>ン<red>カ<red>イ<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「たからものは どれだけ<line>
+ みつかったのかしら?<line>
+ がんばって ぼうけんしてね!」<end>
+
+
+//POINTER #156 @ $216C1C - STRING #156 @ $277154
+
+#WRITE(GBA,$216C1C)
+<line>
+    <red>『<red>氷<red>の<red>海<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「どうしたの? スタフィー<line>
+ 氷に とじこめられた クリオレを<line>
+ なんとかしてあげないと・・・」<end>
+
+
+//POINTER #157 @ $216C20 - STRING #157 @ $2771BE
+
+#WRITE(GBA,$216C20)
+<line>
+   <red>『<red>そ<red>ら<red>の<red>海<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「がんばって スタフィー!<line>
+ にっくき オーグラは<line>
+ すぐそこよ!」<end>
+
+
+//POINTER #158 @ $216C24 - STRING #158 @ $27721C
+
+#WRITE(GBA,$216C24)
+<line>
+   <red>『<red>テ<red>ン<red>カ<red>イ<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「スタフィー!!<line>
+ とうとうここまで<line>
+ やって来たわね!」<wait><scrollup><scrollup><scrollup><line>
+「オーグラは きょうてきよ!<line>
+ 気をひきしめて さいごの<line>
+ たたかいに のぞんでね!」<end>
+
+
+//POINTER #159 @ $216C28 - STRING #159 @ $2772AC
+
+#WRITE(GBA,$216C28)
+<line>
+  <red>『<red>ち<red>ん<red>ぼ<red>つ<red>せ<red>ん<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「いそいで! スタフィー!<line>
+ マモノは すぐそこまで<line>
+ 来ているわ!!」<end>
+
+
+//POINTER #160 @ $216C2C - STRING #160 @ $277311
+
+#WRITE(GBA,$216C2C)
+<line>
+  <red>『<red>ロ<red>ブ<red>の<red>ど<red>う<red>く<red>つ<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「たからものは どれだけ<line>
+ みつかったのかしら?<line>
+ がんばって ぼうけんしてね!」<end>
+
+
+//POINTER #161 @ $216C30 - STRING #161 @ $27737E
+
+#WRITE(GBA,$216C30)
+<line>
+  <red>『<red>ザ<red>シ<red>ョ<red>ウ<red>ク<red>ジ<red>ラ<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「たからものは どれだけ<line>
+ みつかったのかしら?<line>
+ がんばって ぼうけんしてね!」<end>
+
+
+//POINTER #162 @ $216C34 - STRING #162 @ $2773EB
+
+#WRITE(GBA,$216C34)
+<line>
+    <red>『<red>氷<red>の<red>海<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「たからものは どれだけ<line>
+ みつかったのかしら?<line>
+ がんばって ぼうけんしてね!」<end>
+
+
+//POINTER #163 @ $216C38 - STRING #163 @ $27744E
+
+#WRITE(GBA,$216C38)
+<line>
+   <red>『<red>ふ<red>か<red>い<red>海<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「たからものは どれだけ<line>
+ みつかったのかしら?<line>
+ がんばって ぼうけんしてね!」<end>
+
+
+//POINTER #164 @ $216C3C - STRING #164 @ $2774B3
+
+#WRITE(GBA,$216C3C)
+<line>
+  <red>『<red>ち<red>ん<red>ぼ<red>つ<red>せ<red>ん<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「たからものは どれだけ<line>
+ みつかったのかしら?<line>
+ がんばって ぼうけんしてね!」<end>
+
+
+//POINTER #165 @ $216C40 - STRING #165 @ $27751D
+
+#WRITE(GBA,$216C40)
+<line>
+  <red>『<red>ち<red>ん<red>ぼ<red>つ<red>せ<red>ん<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「たからものは どれだけ<line>
+ みつかったのかしら?<line>
+ がんばって ぼうけんしてね!」<end>
+
+
+//POINTER #166 @ $216C44 - STRING #166 @ $277587
+
+#WRITE(GBA,$216C44)
+<line>
+  <red>『<red>ち<red>ん<red>ぼ<red>つ<red>せ<red>ん<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「たからものは どれだけ<line>
+ みつかったのかしら?<line>
+ がんばって ぼうけんしてね!」<end>
+
+
+//POINTER #167 @ $216C48 - STRING #167 @ $2775F1
+
+#WRITE(GBA,$216C48)
+<line>
+  <red>『<red>ち<red>ん<red>ぼ<red>つ<red>せ<red>ん<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「たからものは どれだけ<line>
+ みつかったのかしら?<line>
+ がんばって ぼうけんしてね!」<end>
+
+
+//POINTER #168 @ $216C4C - STRING #168 @ $27765B
+
+#WRITE(GBA,$216C4C)
+<line>
+ <red>『<red>か<red>い<red>て<red>い<red>し<red>ん<red>で<red>ん<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「たからものは どれだけ<line>
+ みつかったのかしら?<line>
+ がんばって ぼうけんしてね!」<end>
+
+
+//POINTER #169 @ $216C50 - STRING #169 @ $2776CA
+
+#WRITE(GBA,$216C50)
+<line>
+ <red>『<red>か<red>い<red>て<red>い<red>し<red>ん<red>で<red>ん<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「たからものは どれだけ<line>
+ みつかったのかしら?<line>
+ がんばって ぼうけんしてね!」<end>
+
+
+//POINTER #170 @ $216C54 - STRING #170 @ $277739
+
+#WRITE(GBA,$216C54)
+<line>
+   <red>『<red>そ<red>ら<red>の<red>海<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「たからものは どれだけ<line>
+ みつかったのかしら?<line>
+ がんばって ぼうけんしてね!」<end>
+
+
+//POINTER #171 @ $216C58 - STRING #171 @ $27779E
+
+#WRITE(GBA,$216C58)
+<line>
+   <red>『<red>テ<red>ン<red>カ<red>イ<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「たからものは どれだけ<line>
+ みつかったのかしら?<line>
+ がんばって ぼうけんしてね!」<end>
+
+
+//POINTER #172 @ $216C5C - STRING #172 @ $277803
+
+#WRITE(GBA,$216C5C)
+<line>
+   <red>『<red>テ<red>ン<red>カ<red>イ<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「たからものは どれだけ<line>
+ みつかったのかしら?<line>
+ がんばって ぼうけんしてね!」<end>
+
+
+//POINTER #173 @ $216C60 - STRING #173 @ $277868
+
+#WRITE(GBA,$216C60)
+<line>
+   <red>『<red>テ<red>ン<red>カ<red>イ<red>』の つづき<wait><clear><line>
+<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+「たからものは どれだけ<line>
+ みつかったのかしら?<line>
+ がんばって ぼうけんしてね!」<end>
+
+
+//POINTER #174 @ $216C64 - STRING #174 @ $2753F8
+
+#WRITE(GBA,$216C64)
+タツノコを おとさず<line>
+ひろって てんすうを<line>
+かせごう<end>
+
+
+//POINTER #175 @ $216C68 - STRING #175 @ $275416
+
+#WRITE(GBA,$216C68)
+サングラスの 入った<line>
+カンを よくみて<line>
+こわそう<end>
+
+
+//POINTER #176 @ $216C6C - STRING #176 @ $275432
+
+#WRITE(GBA,$216C6C)
+じぶんの ゴールを<line>
+まもりながら あいての<line>
+ゴールを ねらおう<end>
+
+
+//POINTER #177 @ $216C70 - STRING #177 @ $275455
+
+#WRITE(GBA,$216C70)
+海のゴミを あいてより<line>
+おおく あつめよう<end>
+
+
+//POINTER #178 @ $216C74 - STRING #178 @ $27546D
+
+#WRITE(GBA,$216C74)
+ばくふうに まきこまれ<line>
+ないように ばくだんを<line>
+あいてに わたそう<end>
+
+
+//POINTER #179 @ $216C78 - STRING #179 @ $275492
+
+#WRITE(GBA,$216C78)
+ボールを うまく<line>
+はじいて あなに<line>
+ほうりこもう<end>
+
+
+//POINTER #180 @ $216C7C - STRING #180 @ $2754AE
+
+#WRITE(GBA,$216C7C)
+フルーツを ねらって<line>
+おちてきたところを<line>
+うまく とろう<end>
+
+
+//POINTER #181 @ $216C80 - STRING #181 @ $2754CE
+
+#WRITE(GBA,$216C80)
+まだ クリアしていない<line>
+ミニゲームだよ<line>
+ぼうけんして さがそう<end>
+
+
+//POINTER #182 @ $216C84 - STRING #182 @ $277A7C
+
+#WRITE(GBA,$216C84)
+     『ロブのどうくつ』<end>
+
+
+//POINTER #183 @ $216C88 - STRING #183 @ $277A8C
+
+#WRITE(GBA,$216C88)
+      『サンゴショウ』<end>
+
+
+//POINTER #184 @ $216C8C - STRING #184 @ $277A9C
+
+#WRITE(GBA,$216C8C)
+     『ザショウクジラ』<end>
+
+
+//POINTER #185 @ $216C90 - STRING #185 @ $277AAC
+
+#WRITE(GBA,$216C90)
+       『氷の海』<end>
+
+
+//POINTER #186 @ $216C94 - STRING #186 @ $277ABA
+
+#WRITE(GBA,$216C94)
+       『ふかい海』<end>
+
+
+//POINTER #187 @ $216C98 - STRING #187 @ $277AC9
+
+#WRITE(GBA,$216C98)
+      『ちんぼつせん』<end>
+
+
+//POINTER #188 @ $216C9C - STRING #188 @ $277AD9
+
+#WRITE(GBA,$216C9C)
+     『かいていしんでん』<end>
+
+
+//POINTER #189 @ $216CA0 - STRING #189 @ $277AEA
+
+#WRITE(GBA,$216CA0)
+       『そらの海』<end>
+
+
+//POINTER #190 @ $216CA4 - STRING #190 @ $277AF9
+
+#WRITE(GBA,$216CA4)
+       『テンカイ』<end>
+
+
+//POINTER #191 @ $216CA8 - STRING #191 @ $277928
+
+#WRITE(GBA,$216CA8)
+これから はじまる ぼうけんのために<line>
+まずは うごきを れんしゅうしよう<end>
+
+
+//POINTER #192 @ $216CAC - STRING #192 @ $27794F
+
+#WRITE(GBA,$216CAC)
+ぼうけんを たすけてくれる<line>
+心づよい なかまが とうじょう!?<end>
+
+
+//POINTER #193 @ $216CB0 - STRING #193 @ $277971
+
+#WRITE(GBA,$216CB0)
+『テンカイ』に かえる ほうほうは?<line>
+なかまを みつけて はなしかけよう<end>
+
+
+//POINTER #194 @ $216CB4 - STRING #194 @ $277998
+
+#WRITE(GBA,$216CB4)
+キョロスケと いっしょに<line>
+クリオレを さがしてみよう!<end>
+
+
+//POINTER #195 @ $216CB8 - STRING #195 @ $2779B6
+
+#WRITE(GBA,$216CB8)
+ナゾの マモノに<line>
+ふかーい海へ とじこめられたよ!<line>
+だっしゅつ しなくちゃ!<end>
+
+
+//POINTER #196 @ $216CBC - STRING #196 @ $2779E0
+
+#WRITE(GBA,$216CBC)
+どうやら 中を とおるしかないね<line>
+ゆうきを出して たんけんしよう<end>
+
+
+//POINTER #197 @ $216CC0 - STRING #197 @ $277A03
+
+#WRITE(GBA,$216CC0)
+ふるい しんでんに かくされたナゾ!<line>
+しらべているのは スタフィーたちと<line>
+そして・・・?<end>
+
+
+//POINTER #198 @ $216CC4 - STRING #198 @ $277A33
+
+#WRITE(GBA,$216CC4)
+ナゾのマモノ オーグラを おいかけて<line>
+とうとう そらへ!<end>
+
+
+//POINTER #199 @ $216CC8 - STRING #199 @ $277A52
+
+#WRITE(GBA,$216CC8)
+いよいよ さいごの たたかい!<line>
+オーグラを たおして<line>
+平和を とりもどそう!<end>
+
