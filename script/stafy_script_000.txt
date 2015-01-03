@@ -312,81 +312,99 @@
 //おおきな うみの そらたかく<line>
 //くものうえに 『テンカイ』という<line>
 //へいわな おうこくが ありました<wait><end>
-Surrounded by the vast sea there<line>
-exists a peaceful kingdom high in the<line>
-sky above the clouds called "Pufftop"<wait><end>
-#ACTIVETBL(Table)
+High in the sky, there exists<line>
+a peaceful kingdom above the<line>
+clouds called, "Pufftop."<wait><end>
 
 
 //POINTER #38 @ $216A44 - STRING #38 @ $274666
 
 #WRITE(GBA,$216A44)
-  そこにすむ スタフィーは<line>
-  テンカイの 王子サマ<wait><end>
-
+//  そこにすむ スタフィーは<line>
+//  テンカイの 王子サマ<wait><end>
+  There lives Stafy,<line>
+  Prince of Pufftop.<wait><end>
+  
 
 //POINTER #39 @ $216A48 - STRING #39 @ $274686
 
 #WRITE(GBA,$216A48)
-でも そそっかしいところがあって<line>
-しっぱいすることも たびたび<wait><end>
+//でも そそっかしいところがあって<line>
+//しっぱいすることも たびたび<wait><end>
+Even though he frequently<line>
+makes careless blunders.<wait><end>
 
 
 //POINTER #40 @ $216A4C - STRING #40 @ $2746AA
 
 #WRITE(GBA,$216A4C)
-ある日 だいじな たからものを<line>
-はこんでいましたが・・・・・・<wait><end>
+//ある日 だいじな たからものを<line>
+//はこんでいましたが・・・・・・<wait><end>
+One day he was moving<line>
+important treasure.....<wait><end>
 
 
 //POINTER #41 @ $216A50 - STRING #41 @ $2746CE
 
 #WRITE(GBA,$216A50)
-うっかり たからものを<line>
-おとしてしまいました<wait><end>
+//うっかり たからものを<line>
+//おとしてしまいました<wait><end>
+He had carelessly dropped<line>
+the important treasure...<wait><end>
 
 
 //POINTER #42 @ $216A54 - STRING #42 @ $2746E9
 
 #WRITE(GBA,$216A54)
-  す る と !<wait><end>
+//  す る と !<wait><end>
+  Immediately after...!<wait><end>
 
 
 //POINTER #43 @ $216A58 - STRING #43 @ $2746F6
 
 #WRITE(GBA,$216A58)
-「・・・・ワシのこえが きこえるか?」<wait><end>
+//「・・・・ワシのこえが きこえるか?」<wait><end>
+  ...Can you hear me?<wait><end>
 
 
 //POINTER #44 @ $216A5C - STRING #44 @ $27470D
 
 #WRITE(GBA,$216A5C)
-「おお どうやら ぶじのようじゃ!<line>
- テンカイの ものじゃな?<line>
- おちて来たのかの?」<wait><end>
+//「おお どうやら ぶじのようじゃ!<line>
+// テンカイの ものじゃな?<line>
+// おちて来たのかの?」<wait><end>
+  It seems like the waning of great peace!<line>
+  A native from Pufftop?<line>
+  What caused you to fall?<wait><end>
 
 
 //POINTER #45 @ $216A60 - STRING #45 @ $27473E
 
 #WRITE(GBA,$216A60)
-「なんと!!テンカイの王子<line>
- スタフィーとな!?」<wait><end>
+//「なんと!!テンカイの王子<line>
+// スタフィーとな!?」<wait><end>
+  What!<line>
+  Prince Stafy of Pufftop?!<wait><end> 
 
 
 //POINTER #46 @ $216A64 - STRING #46 @ $27475C
 
 #WRITE(GBA,$216A64)
-「ここは ちいさな しまにある<line>
- ワシの いえじゃ」<wait><end>
+//「ここは ちいさな しまにある<line>
+// ワシの いえじゃ」<wait><end>
+  This little place is my home.<wait><end>
 
 
 //POINTER #47 @ $216A68 - STRING #47 @ $27477B
 
 #WRITE(GBA,$216A68)
-「ワシのなまえは ロブという<line>
- 外はまだ ひどい あらしじゃから<line>
- しばらくは やすんでいくがよいぞ」<wait><end>
-
+//「ワシのなまえは ロブという<line>
+// 外はまだ ひどい あらしじゃから<line>
+// しばらくは やすんでいくがよいぞ」<wait><end>
+  My name is Rob.<line>
+  It's been a while since the beaches<line>
+  had such cruel storms.<wait><end>
+#ACTIVETBL(Table)
 
 //POINTER #48 @ $216A6C - STRING #48 @ $274D9C
 
@@ -400,7 +418,7 @@ sky above the clouds called "Pufftop"<wait><end>
 //POINTER #49 @ $216A70 - STRING #49 @ $274DE6
 
 #WRITE(GBA,$216A70)
-<start?>王さま<line>
+<startname>王さま<line>
 「よくぞ 『ふしぎなツボ』の<line>
  ひみつが わかったな!」<line>
    <clear><line>
@@ -413,18 +431,18 @@ sky above the clouds called "Pufftop"<wait><end>
 「さて キョロスケよ! スタフィーを<line>
  たすけてくれて かんしゃするぞ!」<line>
    <clear><line>
-<start?>キョロスケ<line>
+<startname>キョロスケ<line>
 「おいおい わかってねえな!<line>
  ぜーんぶ オレさまのおかげで・・」<line>
    <clear><line>
-<start?>王さま<line>
+<startname>王さま<line>
 「わかった わかった!<line>
  ほうびに ほしいものがあるか?」<line>
    <clear><line>
-<start?>キョロスケ<line>
+<startname>キョロスケ<line>
 「もちろん テンカイの おたから!」<line>
    <clear><line>
-<start?>王さま<line>
+<startname>王さま<line>
 「ほう そうか!<line>
  スタフィー もってきなさい!」<end>
 
@@ -432,7 +450,7 @@ sky above the clouds called "Pufftop"<wait><end>
 //POINTER #50 @ $216A74 - STRING #50 @ $274F3D
 
 #WRITE(GBA,$216A74)
-<start?>王さま<line>
+<startname>王さま<line>
 「なんと! たからばこを ぜんぶ<line>
  海に おとしたというのか!?」<end>
 
@@ -440,7 +458,7 @@ sky above the clouds called "Pufftop"<wait><end>
 //POINTER #51 @ $216A78 - STRING #51 @ $274F68
 
 #WRITE(GBA,$216A78)
-<start?>キョロスケ<line>
+<startname>キョロスケ<line>
 「オイッ! ホントか!? オレさまの<line>
  おたから どうすんだ!」<end>
 
@@ -448,7 +466,7 @@ sky above the clouds called "Pufftop"<wait><end>
 //POINTER #52 @ $216A7C - STRING #52 @ $274F94
 
 #WRITE(GBA,$216A7C)
-<start?>王さま<line>
+<startname>王さま<line>
 「ほうびの はなしは たからばこを<line>
  ぜんぶ あつめてからとしよう」<end>
 
@@ -456,7 +474,7 @@ sky above the clouds called "Pufftop"<wait><end>
 //POINTER #53 @ $216A80 - STRING #53 @ $274FC0
 
 #WRITE(GBA,$216A80)
-<start?>キョロスケ<line>
+<startname>キョロスケ<line>
 「エーッ!! ちっくしょー・・・・」<end>
 
 
@@ -486,15 +504,15 @@ sky above the clouds called "Pufftop"<wait><end>
 //POINTER #57 @ $216A90 - STRING #57 @ $275056
 
 #WRITE(GBA,$216A90)
-<start?>王さま<line>
+<startname>王さま<line>
 「よくやったと いいたいが・・・・<line>
  なぜ オーグラは にげたのだ?」<line>
    <clear><line>
-<start?>キョロスケ<line>
+<startname>キョロスケ<line>
 「知らねえなぁ マヌケなヤツが<line>
  うっかり ツボを おとしたんだろ?」<line>
    <clear><line>
-<start?>王さま<line>
+<startname>王さま<line>
 「そうかもしれん きをつけねばな!<line>
  ところでスタフィー!」<end>
 
@@ -510,7 +528,7 @@ sky above the clouds called "Pufftop"<wait><end>
 //POINTER #59 @ $216A98 - STRING #59 @ $275119
 
 #WRITE(GBA,$216A98)
-<start?>キョロスケ<line>
+<startname>キョロスケ<line>
 「なに? おい スタフィー!<line>
  まだ あつまってないだと!?」<end>
 
@@ -542,7 +560,7 @@ sky above the clouds called "Pufftop"<wait><end>
 //POINTER #63 @ $216AA8 - STRING #63 @ $2751D5
 
 #WRITE(GBA,$216AA8)
-<start?>王さま<line>
+<startname>王さま<line>
 「とうとう すべての たからばこを<line>
  あつめたか・・・よくやった!」<end>
 
@@ -554,7 +572,7 @@ sky above the clouds called "Pufftop"<wait><end>
  せっかく ふうじこめた オーグラを<line>
  にがしたのは おぬしだぞ!!」<line>
     <clear><line>
-<start?>キョロスケ<line>
+<startname>キョロスケ<line>
 「・・そういや ツボに ぶつかったな<line>
  ま まあ・・・おわったコトだ!」<end>
 
@@ -570,17 +588,17 @@ sky above the clouds called "Pufftop"<wait><end>
 //POINTER #66 @ $216AB4 - STRING #66 @ $275298
 
 #WRITE(GBA,$216AB4)
-<start?>王さま<line>
+<startname>王さま<line>
 「・・・よかったな スタフィー!」<line>
     <clear><line>
 「キョロスケは おまえの けらいに<line>
  なってくれるらしい!」<line>
     <clear><line>
-<start?>キョロスケ<line>
+<startname>キョロスケ<line>
 「なにを いってんだ?<line>
  ・・・・そんなワケ ねーだろ?」<line>
     <clear><line>
-<start?>王さま<line>
+<startname>王さま<line>
 「たからは 王につかえる<line>
  けらいたちの あかし!」<line>
     <clear><line>
@@ -591,7 +609,7 @@ sky above the clouds called "Pufftop"<wait><end>
 //POINTER #67 @ $216AB8 - STRING #67 @ $275361
 
 #WRITE(GBA,$216AB8)
-<start?>キョロスケ<line>
+<startname>キョロスケ<line>
 「な なんで オレさまが<line>
  コイツの けらいなんかに!」<line>
     <clear><line>
@@ -615,9 +633,11 @@ sky above the clouds called "Pufftop"<wait><end>
 
 //POINTER #70 @ $216AC4 - STRING #70 @ $2778D0
 
+#ACTIVETBL(engTable)
 #WRITE(GBA,$216AC4)
-『ロブのどうくつ』<end>
-
+//『ロブのどうくつ』<end>
+Rob's Cave<end>
+#ACTIVETBL(Table)
 
 //POINTER #71 @ $216AC8 - STRING #71 @ $2778DB
 
@@ -817,7 +837,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216B2C)
 <line>
   <red>『<red>サ<red>ン<red>ゴ<red>シ<red>ョ<red>ウ<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「ワルモノに さらわれたっていう<line>
  ヤドカリタの なかまを<line>
  さがしてね」<end>
@@ -828,7 +848,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216B30)
 <line>
   <red>『<red>ザ<red>シ<red>ョ<red>ウ<red>ク<red>ジ<red>ラ<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<red><end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<red><endname><line>
 「クジラさんに<line>
  すいこまれちゃったんだ・・・」<wait><scrollup><scrollup><line>
 「でも あなたの たすけをまつ<line>
@@ -840,7 +860,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216B34)
 <line>
     <red>『<red>氷<red>の<red>海<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「クリオレを たすけてほしいって<line>
  いってたっけ・・・<line>
  さあ さがしに行きましょ!」<end>
@@ -851,7 +871,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216B38)
 <line>
    <red>『<red>ふ<red>か<red>い<red>海<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「このへんに オオタルイカさんの<line>
  へやがあるはずだけど・・?」<end>
 
@@ -861,7 +881,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216B3C)
 <line>
   <red>『<red>ち<red>ん<red>ぼ<red>つ<red>せ<red>ん<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「ボクトパスに とらえられた<line>
  イルカたち・・<line>
  早く たすけだしてあげてね」<end>
@@ -872,7 +892,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216B40)
 <line>
  <red>『<red>か<red>い<red>て<red>い<red>し<red>ん<red>で<red>ん<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「キョロスケは しんでんの中に<line>
  入っていったわよ?」<end>
 
@@ -882,7 +902,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216B44)
 <line>
    <red>『<red>そ<red>ら<red>の<red>海<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「がんばって スタフィー!<line>
  にっくき オーグラは<line>
  すぐそこよ!」<end>
@@ -893,7 +913,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216B48)
 <line>
   <red>『<red>ロ<red>ブ<red>の<red>ど<red>う<red>く<red>つ<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「ヤドカリタさんが なくした<line>
  おうちを さがしてあげてね」<end>
 
@@ -903,7 +923,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216B4C)
 <line>
     <red>『<red>氷<red>の<red>海<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「どうしたの? スタフィー<line>
  氷に とじこめられた クリオレを<line>
  なんとかしてあげないと・・・」<end>
@@ -914,7 +934,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216B50)
 <line>
   <red>『<red>ち<red>ん<red>ぼ<red>つ<red>せ<red>ん<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「いそいで! スタフィー!<line>
  マモノは すぐそこまで<line>
  来ているわ!!」<end>
@@ -925,7 +945,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216B54)
 <line>
  <red>『<red>か<red>い<red>て<red>い<red>し<red>ん<red>で<red>ん<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「<red>『<red>よ<red>げ<red>ん<red>し<red>ょ<red>』は どこに?<line>
  しんでんの 中を たんけんすると<line>
  みつかるかな?」<end>
@@ -936,7 +956,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216B58)
 <line>
    <red>『<red>テ<red>ン<red>カ<red>イ<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「スタフィー!!<line>
  とうとうここまで<line>
  やって来たわね!」<wait><scrollup><scrollup><scrollup><line>
@@ -950,7 +970,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216B5C)
 <line>
   <red>『<red>サ<red>ン<red>ゴ<red>シ<red>ョ<red>ウ<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「がんばって スタフィー!<line>
  キョロスケと きょうりょくして<line>
  ハデヒラリを さがしてね」<end>
@@ -961,7 +981,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216B60)
 <line>
   <red>『<red>サ<red>ン<red>ゴ<red>シ<red>ョ<red>ウ<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「がんばって スタフィー!<line>
  キョロスケと きょうりょくして<line>
  ハデヒラリを さがしてね」<end>
@@ -972,7 +992,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216B64)
 <line>
   <red>『<red>ザ<red>シ<red>ョ<red>ウ<red>ク<red>ジ<red>ラ<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「いろんな なかまを さがしてね!<line>
  きっと クジラさんの<line>
  たすけかたが わかるはず!」<end>
@@ -983,7 +1003,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216B68)
 <line>
   <red>『<red>ザ<red>シ<red>ョ<red>ウ<red>ク<red>ジ<red>ラ<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「クジラさん・・<line>
  元気になると いいね・・」<wait><scrollup><scrollup><line>
 「スタフィーだけだよ<line>
@@ -995,7 +1015,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216B6C)
 <line>
     <red>『<red>氷<red>の<red>海<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「どうしたの? スタフィー<line>
  氷に とじこめられた クリオレを<line>
  なんとかしてあげないと・・・」<end>
@@ -1006,7 +1026,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216B70)
 <line>
     <red>『<red>氷<red>の<red>海<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「どうしたの? スタフィー<line>
  氷に とじこめられた クリオレを<line>
  なんとかしてあげないと・・・」<end>
@@ -1017,7 +1037,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216B74)
 <line>
     <red>『<red>氷<red>の<red>海<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「おつかれさま スタフィー!<line>
  あとは ボエールンを<line>
  たおすだけね! がんばって!」<end>
@@ -1028,7 +1048,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216B78)
 <line>
     <red>『<red>氷<red>の<red>海<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「どうしたの? スタフィー<line>
  氷に とじこめられた クリオレを<line>
  なんとかしてあげないと・・・」<end>
@@ -1039,7 +1059,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216B7C)
 <line>
   <red>『<red>ち<red>ん<red>ぼ<red>つ<red>せ<red>ん<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「ボクトパスに とらえられた<line>
  イルカたち・・<line>
  早く たすけだしてあげてね」<end>
@@ -1050,7 +1070,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216B80)
 <line>
   <red>『<red>ち<red>ん<red>ぼ<red>つ<red>せ<red>ん<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「ボクトパスに とらえられた<line>
  イルカたち・・<line>
  早く たすけだしてあげてね」<end>
@@ -1061,7 +1081,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216B84)
 <line>
    <red>『<red>そ<red>ら<red>の<red>海<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「がんばって スタフィー!<line>
  にっくき オーグラは<line>
  すぐそこよ!」<end>
@@ -1072,7 +1092,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216B88)
 <line>
    <red>『<red>そ<red>ら<red>の<red>海<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「がんばって スタフィー!<line>
  にっくき オーグラは<line>
  すぐそこよ!」<end>
@@ -1083,7 +1103,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216B8C)
 <line>
    <red>『<red>ふ<red>か<red>い<red>海<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「ウォーツァルトさんは<line>
  <red>『<red>海<red>の<red>ね<red>い<red>ろ<red>』を<line>
  まだ さがしていますよ・・・」<end>
@@ -1094,7 +1114,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216B90)
 <line>
    <red>『<red>ふ<red>か<red>い<red>海<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「どんどん すすみましょ!<line>
  でも どうすれば<line>
  トビラは ひらくのかしら?」<end>
@@ -1105,7 +1125,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216B94)
 <line>
    <red>『<red>ふ<red>か<red>い<red>海<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「ブランタンが あなたを<line>
  まちかまえて いるわ!」<wait><scrollup><scrollup><line>
 「でも 海のそこから<line>
@@ -1118,7 +1138,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216B98)
 <line>
    <red>『<red>テ<red>ン<red>カ<red>イ<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「スタフィー!!<line>
  とうとうここまで<line>
  やって来たわね!」<wait><scrollup><scrollup><scrollup><line>
@@ -1132,7 +1152,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216B9C)
 <line>
    <red>『<red>テ<red>ン<red>カ<red>イ<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「スタフィー!!<line>
  とうとうここまで<line>
  やって来たわね!」<wait><scrollup><scrollup><scrollup><line>
@@ -1146,7 +1166,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216BA0)
 <line>
    <red>『<red>テ<red>ン<red>カ<red>イ<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「スタフィー!!<line>
  とうとうここまで<line>
  やって来たわね!」<wait><scrollup><scrollup><scrollup><line>
@@ -1160,7 +1180,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216BA4)
 <line>
    <red>『<red>テ<red>ン<red>カ<red>イ<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「スタフィー!!<line>
  とうとうここまで<line>
  やって来たわね!」<wait><scrollup><scrollup><scrollup><line>
@@ -1174,7 +1194,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216BA8)
 <line>
    <red>『<red>テ<red>ン<red>カ<red>イ<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「スタフィー!!<line>
  とうとうここまで<line>
  やって来たわね!」<wait><scrollup><scrollup><scrollup><line>
@@ -1188,7 +1208,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216BAC)
 <line>
  <red>『<red>か<red>い<red>て<red>い<red>し<red>ん<red>で<red>ん<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「はぐれた キョロスケが しんぱい<line>
  さがしてあげてね!」<end>
 
@@ -1198,7 +1218,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216BB0)
 <line>
  <red>『<red>か<red>い<red>て<red>い<red>し<red>ん<red>で<red>ん<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「まほうで つくりだされた<line>
  マモノがいるわ! まけないで!」<end>
 
@@ -1208,7 +1228,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216BB4)
 <line>
    <red>『<red>そ<red>ら<red>の<red>海<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「がんばって スタフィー!<line>
  にっくき オーグラは<line>
  すぐそこよ!」<end>
@@ -1219,7 +1239,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216BB8)
 <line>
   <red>『<red>ち<red>ん<red>ぼ<red>つ<red>せ<red>ん<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「いそいで! スタフィー!<line>
  マモノは すぐそこまで<line>
  来ているわ!!」<end>
@@ -1230,7 +1250,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216BBC)
 <line>
    <red>『<red>テ<red>ン<red>カ<red>イ<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「スタフィー!!<line>
  とうとうここまで<line>
  やって来たわね!」<wait><scrollup><scrollup><scrollup><line>
@@ -1244,7 +1264,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216BC0)
 <line>
     <red>『<red>氷<red>の<red>海<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「どうしたの? スタフィー<line>
  氷に とじこめられた クリオレを<line>
  なんとかしてあげないと・・・」<end>
@@ -1255,7 +1275,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216BC4)
 <line>
     <red>『<red>氷<red>の<red>海<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「どうしたの? スタフィー<line>
  氷に とじこめられた クリオレを<line>
  なんとかしてあげないと・・・」<end>
@@ -1266,7 +1286,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216BC8)
 <line>
   <red>『<red>ザ<red>シ<red>ョ<red>ウ<red>ク<red>ジ<red>ラ<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「クジラさんに<line>
  すいこまれちゃったんだ・・・」<wait><scrollup><scrollup><line>
 「でも あなたの たすけをまつ<line>
@@ -1278,7 +1298,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216BCC)
 <line>
   <red>『<red>ザ<red>シ<red>ョ<red>ウ<red>ク<red>ジ<red>ラ<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「いろんな なかまを さがしてね!<line>
  きっと クジラさんの<line>
  たすけかたが わかるはず!」<end>
@@ -1289,7 +1309,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216BD0)
 <line>
     <red>『<red>氷<red>の<red>海<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「おつかれさま スタフィー!<line>
  あとは ボエールンを<line>
  たおすだけね! がんばって!」<end>
@@ -1300,7 +1320,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216BD4)
 <line>
    <red>『<red>ふ<red>か<red>い<red>海<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「タルイカさんたちが ふさいで<line>
  いた 4つのトビラは どこに<line>
  つながっているのかしら・・」<end>
@@ -1311,7 +1331,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216BD8)
 <line>
    <red>『<red>ふ<red>か<red>い<red>海<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「どんどん すすみましょ!<line>
  でも どうすれば<line>
  トビラは ひらくのかしら?」<end>
@@ -1322,7 +1342,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216BDC)
 <line>
  <red>『<red>か<red>い<red>て<red>い<red>し<red>ん<red>で<red>ん<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「<red>『<red>よ<red>げ<red>ん<red>し<red>ょ<red>』は どこに?<line>
  しんでんの 中を たんけんすると<line>
  みつかるかな?」<end>
@@ -1333,7 +1353,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216BE0)
 <line>
  <red>『<red>か<red>い<red>て<red>い<red>し<red>ん<red>で<red>ん<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「<red>『<red>よ<red>げ<red>ん<red>し<red>ょ<red>』は どこに?<line>
  しんでんの 中を たんけんすると<line>
  みつかるかな?」<end>
@@ -1344,7 +1364,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216BE4)
 <line>
    <red>『<red>テ<red>ン<red>カ<red>イ<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「スタフィー!!<line>
  とうとうここまで<line>
  やって来たわね!」<wait><scrollup><scrollup><scrollup><line>
@@ -1358,7 +1378,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216BE8)
 <line>
    <red>『<red>テ<red>ン<red>カ<red>イ<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「スタフィー!!<line>
  とうとうここまで<line>
  やって来たわね!」<wait><scrollup><scrollup><scrollup><line>
@@ -1372,7 +1392,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216BEC)
 <line>
    <red>『<red>そ<red>ら<red>の<red>海<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「がんばって スタフィー!<line>
  にっくき オーグラは<line>
  すぐそこよ!」<end>
@@ -1383,7 +1403,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216BF0)
 <line>
    <red>『<red>そ<red>ら<red>の<red>海<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「がんばって スタフィー!<line>
  にっくき オーグラは<line>
  すぐそこよ!」<end>
@@ -1394,7 +1414,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216BF4)
 <line>
    <red>『<red>そ<red>ら<red>の<red>海<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「がんばって スタフィー!<line>
  にっくき オーグラは<line>
  すぐそこよ!」<end>
@@ -1405,7 +1425,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216BF8)
 <line>
   <red>『<red>ロ<red>ブ<red>の<red>ど<red>う<red>く<red>つ<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「たからものは どれだけ<line>
  みつかったのかしら?<line>
  がんばって ぼうけんしてね!」<end>
@@ -1416,7 +1436,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216BFC)
 <line>
   <red>『<red>サ<red>ン<red>ゴ<red>シ<red>ョ<red>ウ<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「たからものは どれだけ<line>
  みつかったのかしら?<line>
  がんばって ぼうけんしてね!」<end>
@@ -1427,7 +1447,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216C00)
 <line>
   <red>『<red>ザ<red>シ<red>ョ<red>ウ<red>ク<red>ジ<red>ラ<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「たからものは どれだけ<line>
  みつかったのかしら?<line>
  がんばって ぼうけんしてね!」<end>
@@ -1438,7 +1458,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216C04)
 <line>
     <red>『<red>氷<red>の<red>海<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「たからものは どれだけ<line>
  みつかったのかしら?<line>
  がんばって ぼうけんしてね!」<end>
@@ -1449,7 +1469,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216C08)
 <line>
    <red>『<red>ふ<red>か<red>い<red>海<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「たからものは どれだけ<line>
  みつかったのかしら?<line>
  がんばって ぼうけんしてね!」<end>
@@ -1460,7 +1480,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216C0C)
 <line>
   <red>『<red>ち<red>ん<red>ぼ<red>つ<red>せ<red>ん<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「たからものは どれだけ<line>
  みつかったのかしら?<line>
  がんばって ぼうけんしてね!」<end>
@@ -1471,7 +1491,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216C10)
 <line>
  <red>『<red>か<red>い<red>て<red>い<red>し<red>ん<red>で<red>ん<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「たからものは どれだけ<line>
  みつかったのかしら?<line>
  がんばって ぼうけんしてね!」<end>
@@ -1482,7 +1502,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216C14)
 <line>
    <red>『<red>そ<red>ら<red>の<red>海<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「たからものは どれだけ<line>
  みつかったのかしら?<line>
  がんばって ぼうけんしてね!」<end>
@@ -1493,7 +1513,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216C18)
 <line>
    <red>『<red>テ<red>ン<red>カ<red>イ<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「たからものは どれだけ<line>
  みつかったのかしら?<line>
  がんばって ぼうけんしてね!」<end>
@@ -1504,7 +1524,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216C1C)
 <line>
     <red>『<red>氷<red>の<red>海<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「どうしたの? スタフィー<line>
  氷に とじこめられた クリオレを<line>
  なんとかしてあげないと・・・」<end>
@@ -1515,7 +1535,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216C20)
 <line>
    <red>『<red>そ<red>ら<red>の<red>海<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「がんばって スタフィー!<line>
  にっくき オーグラは<line>
  すぐそこよ!」<end>
@@ -1526,7 +1546,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216C24)
 <line>
    <red>『<red>テ<red>ン<red>カ<red>イ<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「スタフィー!!<line>
  とうとうここまで<line>
  やって来たわね!」<wait><scrollup><scrollup><scrollup><line>
@@ -1540,7 +1560,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216C28)
 <line>
   <red>『<red>ち<red>ん<red>ぼ<red>つ<red>せ<red>ん<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「いそいで! スタフィー!<line>
  マモノは すぐそこまで<line>
  来ているわ!!」<end>
@@ -1551,7 +1571,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216C2C)
 <line>
   <red>『<red>ロ<red>ブ<red>の<red>ど<red>う<red>く<red>つ<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「たからものは どれだけ<line>
  みつかったのかしら?<line>
  がんばって ぼうけんしてね!」<end>
@@ -1562,7 +1582,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216C30)
 <line>
   <red>『<red>ザ<red>シ<red>ョ<red>ウ<red>ク<red>ジ<red>ラ<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「たからものは どれだけ<line>
  みつかったのかしら?<line>
  がんばって ぼうけんしてね!」<end>
@@ -1573,7 +1593,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216C34)
 <line>
     <red>『<red>氷<red>の<red>海<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「たからものは どれだけ<line>
  みつかったのかしら?<line>
  がんばって ぼうけんしてね!」<end>
@@ -1584,7 +1604,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216C38)
 <line>
    <red>『<red>ふ<red>か<red>い<red>海<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「たからものは どれだけ<line>
  みつかったのかしら?<line>
  がんばって ぼうけんしてね!」<end>
@@ -1595,7 +1615,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216C3C)
 <line>
   <red>『<red>ち<red>ん<red>ぼ<red>つ<red>せ<red>ん<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「たからものは どれだけ<line>
  みつかったのかしら?<line>
  がんばって ぼうけんしてね!」<end>
@@ -1606,7 +1626,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216C40)
 <line>
   <red>『<red>ち<red>ん<red>ぼ<red>つ<red>せ<red>ん<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「たからものは どれだけ<line>
  みつかったのかしら?<line>
  がんばって ぼうけんしてね!」<end>
@@ -1617,7 +1637,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216C44)
 <line>
   <red>『<red>ち<red>ん<red>ぼ<red>つ<red>せ<red>ん<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「たからものは どれだけ<line>
  みつかったのかしら?<line>
  がんばって ぼうけんしてね!」<end>
@@ -1628,7 +1648,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216C48)
 <line>
   <red>『<red>ち<red>ん<red>ぼ<red>つ<red>せ<red>ん<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「たからものは どれだけ<line>
  みつかったのかしら?<line>
  がんばって ぼうけんしてね!」<end>
@@ -1639,7 +1659,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216C4C)
 <line>
  <red>『<red>か<red>い<red>て<red>い<red>し<red>ん<red>で<red>ん<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「たからものは どれだけ<line>
  みつかったのかしら?<line>
  がんばって ぼうけんしてね!」<end>
@@ -1650,7 +1670,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216C50)
 <line>
  <red>『<red>か<red>い<red>て<red>い<red>し<red>ん<red>で<red>ん<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「たからものは どれだけ<line>
  みつかったのかしら?<line>
  がんばって ぼうけんしてね!」<end>
@@ -1661,7 +1681,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216C54)
 <line>
    <red>『<red>そ<red>ら<red>の<red>海<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「たからものは どれだけ<line>
  みつかったのかしら?<line>
  がんばって ぼうけんしてね!」<end>
@@ -1672,7 +1692,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216C58)
 <line>
    <red>『<red>テ<red>ン<red>カ<red>イ<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「たからものは どれだけ<line>
  みつかったのかしら?<line>
  がんばって ぼうけんしてね!」<end>
@@ -1683,7 +1703,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216C5C)
 <line>
    <red>『<red>テ<red>ン<red>カ<red>イ<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「たからものは どれだけ<line>
  みつかったのかしら?<line>
  がんばって ぼうけんしてね!」<end>
@@ -1694,7 +1714,7 @@ sky above the clouds called "Pufftop"<wait><end>
 #WRITE(GBA,$216C60)
 <line>
    <red>『<red>テ<red>ン<red>カ<red>イ<red>』の つづき<wait><clear><line>
-<start?>◆<red>マ<red>ー<red>メ<red>イ<red>ド<end?><line>
+<startname>◆<red>マ<red>ー<red>メ<red>イ<red>ド<endname><line>
 「たからものは どれだけ<line>
  みつかったのかしら?<line>
  がんばって ぼうけんしてね!」<end>
@@ -1765,8 +1785,11 @@ sky above the clouds called "Pufftop"<wait><end>
 
 //POINTER #182 @ $216C84 - STRING #182 @ $277A7C
 
+#ACTIVETBL(engTable)
 #WRITE(GBA,$216C84)
-     『ロブのどうくつ』<end>
+//     『ロブのどうくつ』<end>
+     Rob's Cave<end>
+#ACTIVETBL(Table)
 
 
 //POINTER #183 @ $216C88 - STRING #183 @ $277A8C

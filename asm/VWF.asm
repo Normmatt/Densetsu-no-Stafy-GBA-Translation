@@ -27,6 +27,9 @@ here:
 .org 0x0832A2FC
 .incbin asm/bin/newfont.bin
 
+.org 0x08345344
+.incbin asm/bin/newfont2.bin
+
 .org 0x086e0000 ; should be free space to put code
 putChar:
 
@@ -36,6 +39,13 @@ putChar:
 	
 	ldr r0, =WidthTable
 	ldrb r1, [r0,r1]
+	
+	;Some places in the game don't like odd positions
+	;so lets just forcibly align it.
+	mov r0, #1
+	mov r2, r1
+	and r2, r0
+	add r1, r1, r2 ;Force alignment if its out
 
 	;Original Code
 	LDR R2, =0x3000E70
