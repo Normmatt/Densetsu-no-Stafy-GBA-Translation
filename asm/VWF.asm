@@ -33,7 +33,7 @@ here:
 .org 0x086e0000 ; should be free space to put code
 putChar:
 
-	LDR R1, =0x3000E60
+	LDR R1, =0x3000E60 ;gCurString
 	LDR R0, [R1] ;load string address
 	LDRB R1, [R0] ; load next byte
 	
@@ -48,16 +48,16 @@ putChar:
 	add r1, r1, r2 ;Force alignment if its out
 
 	;Original Code
-	LDR R2, =0x3000E70
-	;LDR R1, =0x3000E68
-	LDR R0, =0x3000E6C
+	LDR R2, =0x3000E70 ;gTextboxCurX
+	;LDR R1, =0x3000E68 ;gFontGlyphWidth
+	LDR R0, =0x3000E6C ;gFontGlyphHPadding
 	;LDRB R1, [R1] ; always? loads 0x0C the character width
 	LDRB R0, [R0]
 	ADD R0, R1, R0
 	LDRB R1, [R2]
 	ADD R0, R1, R0
 	STRB R0, [R2]
-	LDR R1, =0x3000E60
+	LDR R1, =0x3000E60 ;gCurString
 
 	bx lr
 
