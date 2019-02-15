@@ -1,0 +1,3505 @@
+// Define a TABLE
+#VAR(Table, TABLE)
+#VAR(engTable, TABLE)
+
+// Load and activate the table
+#ADDTBL("script/stafy.tbl", Table)
+#ADDTBL("script/english.tbl", engTable)
+#ACTIVETBL(Table)
+
+// Setup GBA pointers and Pointer Table
+#VAR(GBA, CUSTOMPOINTER)
+// Create our pointer type
+#CREATEPTR(GBA, "LINEAR", $-08000000, 32)
+
+#JMP($730000)
+
+//GAME NAME:		Densetsu no Stafy (GBA)
+
+//BLOCK #002 NAME:		Block 3 - Info (POINTER)
+
+//POINTER #0 @ $27B0A0 - STRING #0 @ $277B08
+
+#W32($27B0A0)
+ロブじいさん<end>
+
+
+//POINTER #1 @ $27B0A4 - STRING #1 @ $277B10
+
+#W32($27B0A4)
+ヤドカリタ<end>
+
+
+//POINTER #2 @ $27B0A8 - STRING #2 @ $277B17
+
+#W32($27B0A8)
+マーメイド<end>
+
+
+//POINTER #3 @ $27B0AC - STRING #3 @ $277B1E
+
+#W32($27B0AC)
+ギョットー<end>
+
+
+//POINTER #4 @ $27B0B0 - STRING #4 @ $277B25
+
+#W32($27B0B0)
+ウキガメ<end>
+
+
+//POINTER #5 @ $27B0B4 - STRING #5 @ $277B2B
+
+#W32($27B0B4)
+マンマルチョウ<end>
+
+
+//POINTER #6 @ $27B0B8 - STRING #6 @ $277B34
+
+#W32($27B0B8)
+チック<end>
+
+
+//POINTER #7 @ $27B0BC - STRING #7 @ $277B39
+
+#W32($27B0BC)
+ガデガデ<end>
+
+
+//POINTER #8 @ $27B0C0 - STRING #8 @ $277B3F
+
+#W32($27B0C0)
+ガンドス<end>
+
+
+//POINTER #9 @ $27B0C4 - STRING #9 @ $277B45
+
+#W32($27B0C4)
+アッチー<end>
+
+
+//POINTER #10 @ $27B0C8 - STRING #10 @ $277B4B
+
+#W32($27B0C8)
+ウーオ<end>
+
+
+//POINTER #11 @ $27B0CC - STRING #11 @ $277B50
+
+#W32($27B0CC)
+ゼリー<end>
+
+
+//POINTER #12 @ $27B0D0 - STRING #12 @ $277B55
+
+#W32($27B0D0)
+チョッキー<end>
+
+
+//POINTER #13 @ $27B0D4 - STRING #13 @ $277B5C
+
+#W32($27B0D4)
+プクカメ<end>
+
+
+//POINTER #14 @ $27B0D8 - STRING #14 @ $277B62
+
+#W32($27B0D8)
+ガイン<end>
+
+
+//POINTER #15 @ $27B0DC - STRING #15 @ $277B67
+
+#W32($27B0DC)
+トベウオ<end>
+
+
+//POINTER #16 @ $27B0E0 - STRING #16 @ $277B6D
+
+#W32($27B0E0)
+フォーク<end>
+
+
+//POINTER #17 @ $27B0E4 - STRING #17 @ $277B73
+
+#W32($27B0E4)
+モードキ<end>
+
+
+//POINTER #18 @ $27B0E8 - STRING #18 @ $277B79
+
+#W32($27B0E8)
+カギバンレイ<end>
+
+
+//POINTER #19 @ $27B0EC - STRING #19 @ $277B81
+
+#W32($27B0EC)
+チンギョ<end>
+
+
+//POINTER #20 @ $27B0F0 - STRING #20 @ $277B87
+
+#W32($27B0F0)
+イッポン<end>
+
+
+//POINTER #21 @ $27B0F4 - STRING #21 @ $277B8D
+
+#W32($27B0F4)
+ノリノリ<end>
+
+
+//POINTER #22 @ $27B0F8 - STRING #22 @ $277B93
+
+#W32($27B0F8)
+テッポ<end>
+
+
+//POINTER #23 @ $27B0FC - STRING #23 @ $277B98
+
+#W32($27B0FC)
+ツノックル<end>
+
+
+//POINTER #24 @ $27B100 - STRING #24 @ $277B9F
+
+#W32($27B100)
+プランクドン<end>
+
+
+//POINTER #25 @ $27B104 - STRING #25 @ $277BA7
+
+#W32($27B104)
+メカニじいさん<end>
+
+
+//POINTER #26 @ $27B108 - STRING #26 @ $277BB0
+
+#W32($27B108)
+キョロスケ<end>
+
+
+//POINTER #27 @ $27B10C - STRING #27 @ $277BB7
+
+#W32($27B10C)
+タツノママ<end>
+
+
+//POINTER #28 @ $27B110 - STRING #28 @ $277BBE
+
+#W32($27B110)
+ハデヒラリ<end>
+
+
+//POINTER #29 @ $27B114 - STRING #29 @ $277BC5
+
+#W32($27B114)
+ボンボーン<end>
+
+
+//POINTER #30 @ $27B118 - STRING #30 @ $277BCC
+
+#W32($27B118)
+メラメラ<end>
+
+
+//POINTER #31 @ $27B11C - STRING #31 @ $277BD2
+
+#W32($27B11C)
+クルーリー<end>
+
+
+//POINTER #32 @ $27B120 - STRING #32 @ $277BD9
+
+#W32($27B120)
+モンジャミン<end>
+
+
+//POINTER #33 @ $27B124 - STRING #33 @ $277BE1
+
+#W32($27B124)
+ヒラパー<end>
+
+
+//POINTER #34 @ $27B128 - STRING #34 @ $277BE7
+
+#W32($27B128)
+サワワ<end>
+
+
+//POINTER #35 @ $27B12C - STRING #35 @ $277BEC
+
+#W32($27B12C)
+ギョップ<end>
+
+
+//POINTER #36 @ $27B130 - STRING #36 @ $277BF2
+
+#W32($27B130)
+ワルガオ<end>
+
+
+//POINTER #37 @ $27B134 - STRING #37 @ $277BF8
+
+#W32($27B134)
+ピンピン<end>
+
+
+//POINTER #38 @ $27B138 - STRING #38 @ $277BFE
+
+#W32($27B138)
+ドカズン<end>
+
+
+//POINTER #39 @ $27B13C - STRING #39 @ $277C04
+
+#W32($27B13C)
+ヒラメイ<end>
+
+
+//POINTER #40 @ $27B140 - STRING #40 @ $277C0A
+
+#W32($27B140)
+マルノコン<end>
+
+
+//POINTER #41 @ $27B144 - STRING #41 @ $277C11
+
+#W32($27B144)
+ビリリマネキ<end>
+
+
+//POINTER #42 @ $27B148 - STRING #42 @ $277C19
+
+#W32($27B148)
+ザショウクジラ<end>
+
+
+//POINTER #43 @ $27B14C - STRING #43 @ $277C22
+
+#W32($27B14C)
+チュータ<end>
+
+
+//POINTER #44 @ $27B150 - STRING #44 @ $277C28
+
+#W32($27B150)
+ムーン<end>
+
+
+//POINTER #45 @ $27B154 - STRING #45 @ $277C2D
+
+#W32($27B154)
+カンニンオヤコ<end>
+
+
+//POINTER #46 @ $27B158 - STRING #46 @ $277C36
+
+#W32($27B158)
+ゼンダマ<end>
+
+
+//POINTER #47 @ $27B15C - STRING #47 @ $277C3C
+
+#W32($27B15C)
+ジイラカンス<end>
+
+
+//POINTER #48 @ $27B160 - STRING #48 @ $277C44
+
+#W32($27B160)
+ヤコウカガミ<end>
+
+
+//POINTER #49 @ $27B164 - STRING #49 @ $277C4C
+
+#W32($27B164)
+バンキロス<end>
+
+
+//POINTER #50 @ $27B168 - STRING #50 @ $277C53
+
+#W32($27B168)
+ワットビン<end>
+
+
+//POINTER #51 @ $27B16C - STRING #51 @ $277C5A
+
+#W32($27B16C)
+アンチイ<end>
+
+
+//POINTER #52 @ $27B170 - STRING #52 @ $277C60
+
+#W32($27B170)
+ミイミイ<end>
+
+
+//POINTER #53 @ $27B174 - STRING #53 @ $277C66
+
+#W32($27B174)
+アイスガイ<end>
+
+
+//POINTER #54 @ $27B178 - STRING #54 @ $277C6D
+
+#W32($27B178)
+シャーミン<end>
+
+
+//POINTER #55 @ $27B17C - STRING #55 @ $277C74
+
+#W32($27B17C)
+ウツボーン<end>
+
+
+//POINTER #56 @ $27B180 - STRING #56 @ $277C7B
+
+#W32($27B180)
+ウーポン<end>
+
+
+//POINTER #57 @ $27B184 - STRING #57 @ $277C81
+
+#W32($27B184)
+トラベラー<end>
+
+
+//POINTER #58 @ $27B188 - STRING #58 @ $277C88
+
+#W32($27B188)
+カチツキー<end>
+
+
+//POINTER #59 @ $27B18C - STRING #59 @ $277C8F
+
+#W32($27B18C)
+ヒャッポー<end>
+
+
+//POINTER #60 @ $27B190 - STRING #60 @ $277C96
+
+#W32($27B190)
+ポトリ<end>
+
+
+//POINTER #61 @ $27B194 - STRING #61 @ $277C9B
+
+#W32($27B194)
+オオムカシ<end>
+
+
+//POINTER #62 @ $27B198 - STRING #62 @ $277CA2
+
+#W32($27B198)
+アイソウニ<end>
+
+
+//POINTER #63 @ $27B19C - STRING #63 @ $277CA9
+
+#W32($27B19C)
+ホタデン<end>
+
+
+//POINTER #64 @ $27B1A0 - STRING #64 @ $277CAF
+
+#W32($27B1A0)
+シャンデー<end>
+
+
+//POINTER #65 @ $27B1A4 - STRING #65 @ $277CB6
+
+#W32($27B1A4)
+フカフカ<end>
+
+
+//POINTER #66 @ $27B1A8 - STRING #66 @ $277CBC
+
+#W32($27B1A8)
+クリオレ<end>
+
+
+//POINTER #67 @ $27B1AC - STRING #67 @ $277CC2
+
+#W32($27B1AC)
+ラブリー<end>
+
+
+//POINTER #68 @ $27B1B0 - STRING #68 @ $277CC8
+
+#W32($27B1B0)
+ナマズドン<end>
+
+
+//POINTER #69 @ $27B1B4 - STRING #69 @ $277CCF
+
+#W32($27B1B4)
+マナズーコ<end>
+
+
+//POINTER #70 @ $27B1B8 - STRING #70 @ $277CD6
+
+#W32($27B1B8)
+ヒラオ<end>
+
+
+//POINTER #71 @ $27B1BC - STRING #71 @ $277CDB
+
+#W32($27B1BC)
+ヒラリン<end>
+
+
+//POINTER #72 @ $27B1C0 - STRING #72 @ $277CE1
+
+#W32($27B1C0)
+コンビー<end>
+
+
+//POINTER #73 @ $27B1C4 - STRING #73 @ $277CE7
+
+#W32($27B1C4)
+ウキッズ<end>
+
+
+//POINTER #74 @ $27B1C8 - STRING #74 @ $277CED
+
+#W32($27B1C8)
+アシカル<end>
+
+
+//POINTER #75 @ $27B1CC - STRING #75 @ $277CF3
+
+#W32($27B1CC)
+ボエールン<end>
+
+
+//POINTER #76 @ $27B1D0 - STRING #76 @ $277CFA
+
+#W32($27B1D0)
+ギロ<end>
+
+
+//POINTER #77 @ $27B1D4 - STRING #77 @ $277CFE
+
+#W32($27B1D4)
+ホタリーカ<end>
+
+
+//POINTER #78 @ $27B1D8 - STRING #78 @ $277D05
+
+#W32($27B1D8)
+パトカリ<end>
+
+
+//POINTER #79 @ $27B1DC - STRING #79 @ $277D0B
+
+#W32($27B1DC)
+メカミック<end>
+
+
+//POINTER #80 @ $27B1E0 - STRING #80 @ $277D12
+
+#W32($27B1E0)
+モンジャック<end>
+
+
+//POINTER #81 @ $27B1E4 - STRING #81 @ $277D1A
+
+#W32($27B1E4)
+アッコウ<end>
+
+
+//POINTER #82 @ $27B1E8 - STRING #82 @ $277D20
+
+#W32($27B1E8)
+パラッソ<end>
+
+
+//POINTER #83 @ $27B1EC - STRING #83 @ $277D26
+
+#W32($27B1EC)
+トオセンボン<end>
+
+
+//POINTER #84 @ $27B1F0 - STRING #84 @ $277D2E
+
+#W32($27B1F0)
+ウーガ<end>
+
+
+//POINTER #85 @ $27B1F4 - STRING #85 @ $277D33
+
+#W32($27B1F4)
+アルカセーキ<end>
+
+
+//POINTER #86 @ $27B1F8 - STRING #86 @ $277D3B
+
+#W32($27B1F8)
+マンドゴーラ<end>
+
+
+//POINTER #87 @ $27B1FC - STRING #87 @ $277D43
+
+#W32($27B1FC)
+コモリン<end>
+
+
+//POINTER #88 @ $27B200 - STRING #88 @ $277D49
+
+#W32($27B200)
+ウロボット<end>
+
+
+//POINTER #89 @ $27B204 - STRING #89 @ $277D50
+
+#W32($27B204)
+シャッケ<end>
+
+
+//POINTER #90 @ $27B208 - STRING #90 @ $277D56
+
+#W32($27B208)
+ボーギョ<end>
+
+
+//POINTER #91 @ $27B20C - STRING #91 @ $277D5C
+
+#W32($27B20C)
+ホノウーオ<end>
+
+
+//POINTER #92 @ $27B210 - STRING #92 @ $277D63
+
+#W32($27B210)
+メルトフィー<end>
+
+
+//POINTER #93 @ $27B214 - STRING #93 @ $277D6B
+
+#W32($27B214)
+モグモグ<end>
+
+
+//POINTER #94 @ $27B218 - STRING #94 @ $277D71
+
+#W32($27B218)
+カイデン<end>
+
+
+//POINTER #95 @ $27B21C - STRING #95 @ $277D77
+
+#W32($27B21C)
+モーグ<end>
+
+
+//POINTER #96 @ $27B220 - STRING #96 @ $277D7C
+
+#W32($27B220)
+ゲコじい<end>
+
+
+//POINTER #97 @ $27B224 - STRING #97 @ $277D82
+
+#W32($27B224)
+ウォーツァルト<end>
+
+
+//POINTER #98 @ $27B228 - STRING #98 @ $277D8B
+
+#W32($27B228)
+タルイカ<end>
+
+
+//POINTER #99 @ $27B22C - STRING #99 @ $277D91
+
+#W32($27B22C)
+オオタルイカ<end>
+
+
+//POINTER #100 @ $27B230 - STRING #100 @ $277D99
+
+#W32($27B230)
+ホタルビ<end>
+
+
+//POINTER #101 @ $27B234 - STRING #101 @ $277D9F
+
+#W32($27B234)
+チクリン<end>
+
+
+//POINTER #102 @ $27B238 - STRING #102 @ $277DA5
+
+#W32($27B238)
+ブランコ<end>
+
+
+//POINTER #103 @ $27B23C - STRING #103 @ $277DAB
+
+#W32($27B23C)
+アメブラシ<end>
+
+
+//POINTER #104 @ $27B240 - STRING #104 @ $277DB2
+
+#W32($27B240)
+ブランタン<end>
+
+
+//POINTER #105 @ $27B244 - STRING #105 @ $277DB9
+
+#W32($27B244)
+ワカゾー<end>
+
+
+//POINTER #106 @ $27B248 - STRING #106 @ $277DBF
+
+#W32($27B248)
+コソギョ<end>
+
+
+//POINTER #107 @ $27B24C - STRING #107 @ $277DC5
+
+#W32($27B24C)
+ワネック<end>
+
+
+//POINTER #108 @ $27B250 - STRING #108 @ $277DCB
+
+#W32($27B250)
+マルメ<end>
+
+
+//POINTER #109 @ $27B254 - STRING #109 @ $277DD0
+
+#W32($27B254)
+スケスケ<end>
+
+
+//POINTER #110 @ $27B258 - STRING #110 @ $277DD6
+
+#W32($27B258)
+チョチン<end>
+
+
+//POINTER #111 @ $27B25C - STRING #111 @ $277DDC
+
+#W32($27B25C)
+ドクロット<end>
+
+
+//POINTER #112 @ $27B260 - STRING #112 @ $277DE3
+
+#W32($27B260)
+カサカサ<end>
+
+
+//POINTER #113 @ $27B264 - STRING #113 @ $277DE9
+
+#W32($27B264)
+ヒュルヒュル<end>
+
+
+//POINTER #114 @ $27B268 - STRING #114 @ $277DF1
+
+#W32($27B268)
+メダツカ<end>
+
+
+//POINTER #115 @ $27B26C - STRING #115 @ $277DF7
+
+#W32($27B26C)
+イカメット<end>
+
+
+//POINTER #116 @ $27B270 - STRING #116 @ $277DFE
+
+#W32($27B270)
+ビビビ<end>
+
+
+//POINTER #117 @ $27B274 - STRING #117 @ $277E03
+
+#W32($27B274)
+ジェルバリー<end>
+
+
+//POINTER #118 @ $27B278 - STRING #118 @ $277E0B
+
+#W32($27B278)
+エンゼル<end>
+
+
+//POINTER #119 @ $27B27C - STRING #119 @ $277E11
+
+#W32($27B27C)
+バルン<end>
+
+
+//POINTER #120 @ $27B280 - STRING #120 @ $277E16
+
+#W32($27B280)
+ピリル<end>
+
+
+//POINTER #121 @ $27B284 - STRING #121 @ $277E1B
+
+#W32($27B284)
+エイビー<end>
+
+
+//POINTER #122 @ $27B288 - STRING #122 @ $277E21
+
+#W32($27B288)
+トリート<end>
+
+
+//POINTER #123 @ $27B28C - STRING #123 @ $277E27
+
+#W32($27B28C)
+ドルフィー<end>
+
+
+//POINTER #124 @ $27B290 - STRING #124 @ $277E2E
+
+#W32($27B290)
+カギバン<end>
+
+
+//POINTER #125 @ $27B294 - STRING #125 @ $277E34
+
+#W32($27B294)
+ミグアーナ<end>
+
+
+//POINTER #126 @ $27B298 - STRING #126 @ $277E3B
+
+#W32($27B298)
+ボクトパス<end>
+
+
+//POINTER #127 @ $27B29C - STRING #127 @ $277E42
+
+#W32($27B29C)
+ウインナー<end>
+
+
+//POINTER #128 @ $27B2A0 - STRING #128 @ $277E49
+
+#W32($27B2A0)
+ピタピタ<end>
+
+
+//POINTER #129 @ $27B2A4 - STRING #129 @ $277E4F
+
+#W32($27B2A4)
+コーラス<end>
+
+
+//POINTER #130 @ $27B2A8 - STRING #130 @ $277E55
+
+#W32($27B2A8)
+タツボー<end>
+
+
+//POINTER #131 @ $27B2AC - STRING #131 @ $277E5B
+
+#W32($27B2AC)
+ブー<end>
+
+
+//POINTER #132 @ $27B2B0 - STRING #132 @ $277E5F
+
+#W32($27B2B0)
+アルモント<end>
+
+
+//POINTER #133 @ $27B2B4 - STRING #133 @ $277E66
+
+#W32($27B2B4)
+マーボー<end>
+
+
+//POINTER #134 @ $27B2B8 - STRING #134 @ $277E6C
+
+#W32($27B2B8)
+グーフ<end>
+
+
+//POINTER #135 @ $27B2BC - STRING #135 @ $277E71
+
+#W32($27B2BC)
+フキャ<end>
+
+
+//POINTER #136 @ $27B2C0 - STRING #136 @ $277E76
+
+#W32($27B2C0)
+コルードン<end>
+
+
+//POINTER #137 @ $27B2C4 - STRING #137 @ $277E7D
+
+#W32($27B2C4)
+トゲセンボン<end>
+
+
+//POINTER #138 @ $27B2C8 - STRING #138 @ $277E85
+
+#W32($27B2C8)
+バッタフライ<end>
+
+
+//POINTER #139 @ $27B2CC - STRING #139 @ $277E8D
+
+#W32($27B2CC)
+ワサワサ<end>
+
+
+//POINTER #140 @ $27B2D0 - STRING #140 @ $277E93
+
+#W32($27B2D0)
+ワルサール<end>
+
+
+//POINTER #141 @ $27B2D4 - STRING #141 @ $277E9A
+
+#W32($27B2D4)
+チクギョ<end>
+
+
+//POINTER #142 @ $27B2D8 - STRING #142 @ $277EA0
+
+#W32($27B2D8)
+スマイム<end>
+
+
+//POINTER #143 @ $27B2DC - STRING #143 @ $277EA6
+
+#W32($27B2DC)
+ダンゴロン<end>
+
+
+//POINTER #144 @ $27B2E0 - STRING #144 @ $277EAD
+
+#W32($27B2E0)
+モック<end>
+
+
+//POINTER #145 @ $27B2E4 - STRING #145 @ $277EB2
+
+#W32($27B2E4)
+ブロッカ<end>
+
+
+//POINTER #146 @ $27B2E8 - STRING #146 @ $277EB8
+
+#W32($27B2E8)
+ガンマー<end>
+
+
+//POINTER #147 @ $27B2EC - STRING #147 @ $277EBE
+
+#W32($27B2EC)
+アクア<end>
+
+
+//POINTER #148 @ $27B2F0 - STRING #148 @ $277EC3
+
+#W32($27B2F0)
+ホルーン<end>
+
+
+//POINTER #149 @ $27B2F4 - STRING #149 @ $277EC9
+
+#W32($27B2F4)
+ジョージロー<end>
+
+
+//POINTER #150 @ $27B2F8 - STRING #150 @ $277ED1
+
+#W32($27B2F8)
+ララコ<end>
+
+
+//POINTER #151 @ $27B2FC - STRING #151 @ $277ED6
+
+#W32($27B2FC)
+ショロスケ<end>
+
+
+//POINTER #152 @ $27B300 - STRING #152 @ $277EDD
+
+#W32($27B300)
+チョロスケ<end>
+
+
+//POINTER #153 @ $27B304 - STRING #153 @ $277EE4
+
+#W32($27B304)
+パオー<end>
+
+
+//POINTER #154 @ $27B308 - STRING #154 @ $277EE9
+
+#W32($27B308)
+ドッペル<end>
+
+
+//POINTER #155 @ $27B30C - STRING #155 @ $277EEF
+
+#W32($27B30C)
+ラブィラブ<end>
+
+
+//POINTER #156 @ $27B310 - STRING #156 @ $277EF6
+
+#W32($27B310)
+ミーモン<end>
+
+
+//POINTER #157 @ $27B314 - STRING #157 @ $277EFC
+
+#W32($27B314)
+トベイウオ<end>
+
+
+//POINTER #158 @ $27B318 - STRING #158 @ $277F03
+
+#W32($27B318)
+ピヨチヨ<end>
+
+
+//POINTER #159 @ $27B31C - STRING #159 @ $277F09
+
+#W32($27B31C)
+マユコイーン<end>
+
+
+//POINTER #160 @ $27B320 - STRING #160 @ $277F11
+
+#W32($27B320)
+ランナン<end>
+
+
+//POINTER #161 @ $27B324 - STRING #161 @ $277F17
+
+#W32($27B324)
+マントワニ<end>
+
+
+//POINTER #162 @ $27B328 - STRING #162 @ $277F1E
+
+#W32($27B328)
+サメット<end>
+
+
+//POINTER #163 @ $27B32C - STRING #163 @ $277F24
+
+#W32($27B32C)
+スカイスイマー<end>
+
+
+//POINTER #164 @ $27B330 - STRING #164 @ $277F2D
+
+#W32($27B330)
+パールキーパー<end>
+
+
+//POINTER #165 @ $27B334 - STRING #165 @ $277F36
+
+#W32($27B334)
+ウコンドリ<end>
+
+
+//POINTER #166 @ $27B338 - STRING #166 @ $277F3D
+
+#W32($27B338)
+スプリンガー<end>
+
+
+//POINTER #167 @ $27B33C - STRING #167 @ $277F45
+
+#W32($27B33C)
+モー<end>
+
+
+//POINTER #168 @ $27B340 - STRING #168 @ $277F49
+
+#W32($27B340)
+リドックス<end>
+
+
+//POINTER #169 @ $27B344 - STRING #169 @ $277F50
+
+#W32($27B344)
+バリック<end>
+
+
+//POINTER #170 @ $27B348 - STRING #170 @ $277F56
+
+#W32($27B348)
+メジロ<end>
+
+
+//POINTER #171 @ $27B34C - STRING #171 @ $277F5B
+
+#W32($27B34C)
+オガクレ<end>
+
+
+//POINTER #172 @ $27B350 - STRING #172 @ $277F61
+
+#W32($27B350)
+デスロール<end>
+
+
+//POINTER #173 @ $27B354 - STRING #173 @ $277F68
+
+#W32($27B354)
+サザーン<end>
+
+
+//POINTER #174 @ $27B358 - STRING #174 @ $277F6E
+
+#W32($27B358)
+ジュエリー<end>
+
+
+//POINTER #175 @ $27B35C - STRING #175 @ $277F75
+
+#W32($27B35C)
+ヒマンドードー<end>
+
+
+//POINTER #176 @ $27B360 - STRING #176 @ $277F7E
+
+#W32($27B360)
+クラーゲン<end>
+
+
+//POINTER #177 @ $27B364 - STRING #177 @ $277F85
+
+#W32($27B364)
+モクモッチュ<end>
+
+
+//POINTER #178 @ $27B368 - STRING #178 @ $277F8D
+
+#W32($27B368)
+カニナリ<end>
+
+
+//POINTER #179 @ $27B36C - STRING #179 @ $277F93
+
+#W32($27B36C)
+イソギン<end>
+
+
+//POINTER #180 @ $27B370 - STRING #180 @ $277F99
+
+#W32($27B370)
+ロックン<end>
+
+
+//POINTER #181 @ $27B374 - STRING #181 @ $277F9F
+
+#W32($27B374)
+タコメット<end>
+
+
+//POINTER #182 @ $27B378 - STRING #182 @ $277FA6
+
+#W32($27B378)
+ツルツラー<end>
+
+
+//POINTER #183 @ $27B37C - STRING #183 @ $277FAD
+
+#W32($27B37C)
+ピラーニャ<end>
+
+
+//POINTER #184 @ $27B380 - STRING #184 @ $277FB4
+
+#W32($27B380)
+スケルギョ<end>
+
+
+//POINTER #185 @ $27B384 - STRING #185 @ $277FBB
+
+#W32($27B384)
+イマダーメ<end>
+
+
+//POINTER #186 @ $27B388 - STRING #186 @ $277FC2
+
+#W32($27B388)
+スカループ<end>
+
+
+//POINTER #187 @ $27B38C - STRING #187 @ $277FC9
+
+#W32($27B38C)
+ミューミュー<end>
+
+
+//POINTER #188 @ $27B390 - STRING #188 @ $277FD1
+
+#W32($27B390)
+ヅラッタ<end>
+
+
+//POINTER #189 @ $27B394 - STRING #189 @ $277FD7
+
+#W32($27B394)
+ヘビール<end>
+
+
+//POINTER #190 @ $27B398 - STRING #190 @ $277FDD
+
+#W32($27B398)
+スカルドン<end>
+
+
+//POINTER #191 @ $27B39C - STRING #191 @ $277FE4
+
+#W32($27B39C)
+アンガー<end>
+
+
+//POINTER #192 @ $27B3A0 - STRING #192 @ $277FEA
+
+#W32($27B3A0)
+チッキン<end>
+
+
+//POINTER #193 @ $27B3A4 - STRING #193 @ $277FF0
+
+#W32($27B3A4)
+ニシキコイル<end>
+
+
+//POINTER #194 @ $27B3A8 - STRING #194 @ $277FF8
+
+#W32($27B3A8)
+カブトマシン<end>
+
+
+//POINTER #195 @ $27B3AC - STRING #195 @ $278000
+
+#W32($27B3AC)
+ジアップ<end>
+
+
+//POINTER #196 @ $27B3B0 - STRING #196 @ $278006
+
+#W32($27B3B0)
+エレキラゲ<end>
+
+
+//POINTER #197 @ $27B3B4 - STRING #197 @ $27800D
+
+#W32($27B3B4)
+コメルト<end>
+
+
+//POINTER #198 @ $27B3B8 - STRING #198 @ $278013
+
+#W32($27B3B8)
+ビリナガシ<end>
+
+
+//POINTER #199 @ $27B3BC - STRING #199 @ $27801A
+
+#W32($27B3BC)
+テンカイヘイシ<end>
+
+
+//POINTER #200 @ $27B3C0 - STRING #200 @ $278023
+
+#W32($27B3C0)
+テンカイコドモ<end>
+
+
+//POINTER #201 @ $27B3C4 - STRING #201 @ $27802C
+
+#W32($27B3C4)
+オーグラ<end>
+
+
+//POINTER #202 @ $27B3C8 - STRING #202 @ $278032
+
+#W32($27B3C8)
+☆☆☆☆☆☆☆☆☆☆<end>
+
+
+//POINTER #203 @ $27B3CC - STRING #203 @ $278032
+
+#W32($27B3CC)
+☆☆☆☆☆☆☆☆☆☆<end>
+
+
+//POINTER #204 @ $27B3D0 - STRING #204 @ $278032
+
+#W32($27B3D0)
+☆☆☆☆☆☆☆☆☆☆<end>
+
+
+//POINTER #205 @ $27B3D4 - STRING #205 @ $278032
+
+#W32($27B3D4)
+☆☆☆☆☆☆☆☆☆☆<end>
+
+
+//POINTER #206 @ $27B3D8 - STRING #206 @ $278032
+
+#W32($27B3D8)
+☆☆☆☆☆☆☆☆☆☆<end>
+
+
+//POINTER #207 @ $27B3DC - STRING #207 @ $278032
+
+#W32($27B3DC)
+☆☆☆☆☆☆☆☆☆☆<end>
+
+
+//POINTER #208 @ $27B3E0 - STRING #208 @ $278032
+
+#W32($27B3E0)
+☆☆☆☆☆☆☆☆☆☆<end>
+
+
+//POINTER #209 @ $27B3E4 - STRING #209 @ $278032
+
+#W32($27B3E4)
+☆☆☆☆☆☆☆☆☆☆<end>
+
+
+//POINTER #210 @ $27B3E8 - STRING #210 @ $278032
+
+#W32($27B3E8)
+☆☆☆☆☆☆☆☆☆☆<end>
+
+
+//POINTER #211 @ $27B3EC - STRING #211 @ $278032
+
+#W32($27B3EC)
+☆☆☆☆☆☆☆☆☆☆<end>
+
+
+//POINTER #212 @ $27B3F0 - STRING #212 @ $278032
+
+#W32($27B3F0)
+☆☆☆☆☆☆☆☆☆☆<end>
+
+
+//POINTER #213 @ $27B3F4 - STRING #213 @ $278032
+
+#W32($27B3F4)
+☆☆☆☆☆☆☆☆☆☆<end>
+
+
+//POINTER #214 @ $27B3F8 - STRING #214 @ $278032
+
+#W32($27B3F8)
+☆☆☆☆☆☆☆☆☆☆<end>
+
+
+//POINTER #215 @ $27B3FC - STRING #215 @ $278032
+
+#W32($27B3FC)
+☆☆☆☆☆☆☆☆☆☆<end>
+
+
+//POINTER #216 @ $27B400 - STRING #216 @ $278032
+
+#W32($27B400)
+☆☆☆☆☆☆☆☆☆☆<end>
+
+
+//POINTER #217 @ $27B404 - STRING #217 @ $278032
+
+#W32($27B404)
+☆☆☆☆☆☆☆☆☆☆<end>
+
+
+//POINTER #218 @ $27B408 - STRING #218 @ $278032
+
+#W32($27B408)
+☆☆☆☆☆☆☆☆☆☆<end>
+
+
+//POINTER #219 @ $27B40C - STRING #219 @ $278032
+
+#W32($27B40C)
+☆☆☆☆☆☆☆☆☆☆<end>
+
+
+//POINTER #220 @ $27B410 - STRING #220 @ $278032
+
+#W32($27B410)
+☆☆☆☆☆☆☆☆☆☆<end>
+
+
+//POINTER #221 @ $27B414 - STRING #221 @ $278032
+
+#W32($27B414)
+☆☆☆☆☆☆☆☆☆☆<end>
+
+
+//POINTER #222 @ $27B418 - STRING #222 @ $278032
+
+#W32($27B418)
+☆☆☆☆☆☆☆☆☆☆<end>
+
+
+//POINTER #223 @ $27B41C - STRING #223 @ $278032
+
+#W32($27B41C)
+☆☆☆☆☆☆☆☆☆☆<end>
+
+
+//POINTER #224 @ $27B420 - STRING #224 @ $278032
+
+#W32($27B420)
+☆☆☆☆☆☆☆☆☆☆<end>
+
+
+//POINTER #225 @ $27B424 - STRING #225 @ $278032
+
+#W32($27B424)
+☆☆☆☆☆☆☆☆☆☆<end>
+
+
+//POINTER #226 @ $27B428 - STRING #226 @ $278032
+
+#W32($27B428)
+☆☆☆☆☆☆☆☆☆☆<end>
+
+
+//POINTER #227 @ $27B42C - STRING #227 @ $278032
+
+#W32($27B42C)
+☆☆☆☆☆☆☆☆☆☆<end>
+
+
+//POINTER #228 @ $27B430 - STRING #228 @ $278032
+
+#W32($27B430)
+☆☆☆☆☆☆☆☆☆☆<end>
+
+
+//POINTER #229 @ $27B434 - STRING #229 @ $278032
+
+#W32($27B434)
+☆☆☆☆☆☆☆☆☆☆<end>
+
+
+//POINTER #230 @ $27B438 - STRING #230 @ $278032
+
+#W32($27B438)
+☆☆☆☆☆☆☆☆☆☆<end>
+
+
+//POINTER #231 @ $27B43C - STRING #231 @ $278032
+
+#W32($27B43C)
+☆☆☆☆☆☆☆☆☆☆<end>
+
+
+//POINTER #232 @ $27B440 - STRING #232 @ $278032
+
+#W32($27B440)
+☆☆☆☆☆☆☆☆☆☆<end>
+
+
+//POINTER #233 @ $27B444 - STRING #233 @ $278032
+
+#W32($27B444)
+☆☆☆☆☆☆☆☆☆☆<end>
+
+
+//POINTER #234 @ $27B448 - STRING #234 @ $278032
+
+#W32($27B448)
+☆☆☆☆☆☆☆☆☆☆<end>
+
+
+//POINTER #235 @ $27B44C - STRING #235 @ $278032
+
+#W32($27B44C)
+☆☆☆☆☆☆☆☆☆☆<end>
+
+
+//POINTER #236 @ $27B450 - STRING #236 @ $278032
+
+#W32($27B450)
+☆☆☆☆☆☆☆☆☆☆<end>
+
+
+//POINTER #237 @ $27B454 - STRING #237 @ $278032
+
+#W32($27B454)
+☆☆☆☆☆☆☆☆☆☆<end>
+
+
+//POINTER #238 @ $27B458 - STRING #238 @ $278032
+
+#W32($27B458)
+☆☆☆☆☆☆☆☆☆☆<end>
+
+
+//POINTER #239 @ $27B45C - STRING #239 @ $278032
+
+#W32($27B45C)
+☆☆☆☆☆☆☆☆☆☆<end>
+
+
+//POINTER #240 @ $27B460 - STRING #240 @ $278032
+
+#W32($27B460)
+☆☆☆☆☆☆☆☆☆☆<end>
+
+
+//POINTER #241 @ $27B464 - STRING #241 @ $27803E
+
+#W32($27B464)
+ーーーーーーーーーー<end>
+
+
+//POINTER #242 @ $27B468 - STRING #242 @ $27804A
+
+#W32($27B468)
+海の 長老だ!<line>
+もう オレさまに すべて<line>
+まかしときゃいいのに・・・<wait><line>
+まだまだ わかいもんには<line>
+まかせられん! だってよ<end>
+
+
+//POINTER #243 @ $27B46C - STRING #243 @ $27808E
+
+#W32($27B46C)
+自分の カイガラを<line>
+なくすなんて・・・<wait><line>
+スタフィーと おなじくらい<line>
+どんくさいヤツだけど<line>
+まあ いい友だちかな?<end>
+
+
+//POINTER #244 @ $27B470 - STRING #244 @ $2780CE
+
+#W32($27B470)
+スタフィーは おせわに<line>
+なりっぱなしだな!<wait><line>
+びじんだし しんせつだし<line>
+オレさまは 大スキだぜ!<end>
+
+
+//POINTER #245 @ $27B474 - STRING #245 @ $278104
+
+#W32($27B474)
+オレさまが いねえあいだに<line>
+どうくつにまで<line>
+あらわれやがったのか!<wait><line>
+つっこんで来やがるが<line>
+かるくひねってやれ!<end>
+
+
+//POINTER #246 @ $27B478 - STRING #246 @ $278143
+
+#W32($27B478)
+なみまで プカプカと<line>
+ういてりゃいいのに<wait><line>
+ムリして もぐって<line>
+来るんだよなぁ<end>
+
+
+//POINTER #247 @ $27B47C - STRING #247 @ $278170
+
+#W32($27B47C)
+ブクブクふとった<line>
+へんなトリだ!<wait><line>
+あれだけ ふとってたら<line>
+そのうち とべなく<line>
+なるかも しれねえな!<end>
+
+
+//POINTER #248 @ $27B480 - STRING #248 @ $2781AA
+
+#W32($27B480)
+よわそうなヤツだと<line>
+思っていたら きゅうに<line>
+トゲをだしやがる・・・<wait><line>
+やっかいな ヤロウだが<line>
+まあ オレさまの<line>
+テキではない!<end>
+
+
+//POINTER #249 @ $27B484 - STRING #249 @ $2781F1
+
+#W32($27B484)
+正面から 近づくと<line>
+かくれちまう<line>
+よわきな ムカデだ!<wait><line>
+ひょっとして カッコいい<line>
+オレさまに みられるのが<line>
+はずかしいのか?<end>
+
+
+//POINTER #250 @ $27B488 - STRING #250 @ $278238
+
+#W32($27B488)
+ふだんは ボケーっと<line>
+してやがるが 近づくと<line>
+いきなり おちてくるぞ!<wait><line>
+ちかくを とおるときは<line>
+ちゅういしたほうが<line>
+いいみたいだ・・・・<end>
+
+
+//POINTER #251 @ $27B48C - STRING #251 @ $278285
+
+#W32($27B48C)
+ゆうがに 泳ぎやがって<line>
+ジャマなんだよ!<wait><line>
+コイツ ぜったいヒマに<line>
+ちがいないぞ!<end>
+
+
+//POINTER #252 @ $27B490 - STRING #252 @ $2782B4
+
+#W32($27B490)
+・・・・じみなヤツだぜ<wait><line>
+だから むれになって<line>
+泳いでいるのか<line>
+なっとく なっとく!<end>
+
+
+//POINTER #253 @ $27B494 - STRING #253 @ $2782E4
+
+#W32($27B494)
+フラフラしてるのは<line>
+みかけどおりだ<wait><line>
+シャキッとしろ!って<line>
+いっても ムリだろうな<line>
+クラゲだから!<end>
+
+
+//POINTER #254 @ $27B498 - STRING #254 @ $27831C
+
+#W32($27B498)
+でかい 右のハサミが<line>
+じまんなのか?<wait><line>
+ちなみに オレさまは<line>
+この つぶらなヒトミが<line>
+かわいいと いわれるぞ!<end>
+
+
+//POINTER #255 @ $27B49C - STRING #255 @ $27835A
+
+#W32($27B49C)
+『サンゴショウ』で<line>
+いちばん のんびりしてるな<wait><line>
+なみまを うかんでるだけ<line>
+かかって来いってんだ!<end>
+
+
+//POINTER #256 @ $27B4A0 - STRING #256 @ $278391
+
+#W32($27B4A0)
+カイガラを とばして<line>
+こうげきしやがる<wait><line>
+なかなか きようなヤツだ<line>
+みならいたくねえけどな<end>
+
+
+//POINTER #257 @ $27B4A4 - STRING #257 @ $2783C4
+
+#W32($27B4A4)
+とべるのは わかってんだ<line>
+だけどな みたことあるか?<wait><line>
+コイツが 泳いでいるトコ!<line>
+泳げなかったりして!<end>
+
+
+//POINTER #258 @ $27B4A8 - STRING #258 @ $2783FE
+
+#W32($27B4A8)
+くーっ! ハラがたつ!<line>
+オレさまを おいかけて<line>
+来やがるんだ!<wait><line>
+まあ スタフィーが<line>
+おいはらったのは よけいな<line>
+おせわだったぜ!<end>
+
+
+//POINTER #259 @ $27B4AC - STRING #259 @ $278447
+
+#W32($27B4AC)
+おくびょうで<line>
+すぐ コウラに ひっこむ<wait><line>
+でも とっしんして来るから<line>
+うごきが よめねえ!<end>
+
+
+//POINTER #260 @ $27B4B0 - STRING #260 @ $27847A
+
+#W32($27B4B0)
+『ちんぼつせん』で<line>
+カギを ぬすみやがった<line>
+カギバンの ユウレイだ!<wait><line>
+ユウレイになってまで<line>
+オレさまに いどもうとは<line>
+しゅうねんぶかいヤツめ!<end>
+
+
+//POINTER #261 @ $27B4B4 - STRING #261 @ $2784CA
+
+#W32($27B4B4)
+たくさん くいすぎて<line>
+うごけなくなった<line>
+マヌケな サカナだ!<wait><line>
+ちょっとは スリムで<line>
+カッコいい オレさまを<line>
+みならえってんだ!<end>
+
+
+//POINTER #262 @ $27B4B8 - STRING #262 @ $278512
+
+#W32($27B4B8)
+リッパな ツノをもった<line>
+へんな カメだ!<wait><line>
+コウラに とじこもって<line>
+いるときは どんな<line>
+こうげきも きかないぞ!<end>
+
+
+//POINTER #263 @ $27B4BC - STRING #263 @ $278551
+
+#W32($27B4BC)
+ボードにのりながら<line>
+ラーメンくってる・・・・<line>
+よく わからんヤツだ!<wait><line>
+オレさまは こういう<line>
+ノリのヤツは けっこう<line>
+すきだぜ!<end>
+
+
+//POINTER #264 @ $27B4C0 - STRING #264 @ $278599
+
+#W32($27B4C0)
+ポンポン タマ出してくる<line>
+やっかいなヤロウだ!<wait><line>
+なまいきに シャレた<line>
+ぼうしなんか<line>
+かぶってやがるぞ!<end>
+
+
+//POINTER #265 @ $27B4C4 - STRING #265 @ $2785D4
+
+#W32($27B4C4)
+コイツの はなは<line>
+きけんだぞ!<line>
+なぜか ドリルだからな!<wait><line>
+そういや スタフィーの<line>
+ききゅうは なんかいも<line>
+コイツにやられてたな・・・<end>
+
+
+//POINTER #266 @ $27B4C8 - STRING #266 @ $27861F
+
+#W32($27B4C8)
+フワフワしながら<line>
+近よって来る<line>
+フーセンみたいなヤツだ!<wait><line>
+とおくからみると<line>
+スタフィーのききゅうと<line>
+みわけがつかねえぞ!<end>
+
+
+//POINTER #267 @ $27B4CC - STRING #267 @ $278664
+
+#W32($27B4CC)
+ききゅうの けんきゅうに<line>
+いのちを かけている<line>
+ガンコな じいさんだ!<wait><line>
+こういうじいさんは<line>
+おこらせると シャレに<line>
+ならねえから ちゅうい!<end>
+
+
+//POINTER #268 @ $27B4D0 - STRING #268 @ $2786B3
+
+#W32($27B4D0)
+おっ カッコいい!って<line>
+思ったら<line>
+なんだ 自分か・・・・<wait><line>
+オメェも オレさまの<line>
+カッコよさに シビれたか?<line>
+ま しょうがねえな<end>
+
+
+//POINTER #269 @ $27B4D4 - STRING #269 @ $2786FB
+
+#W32($27B4D4)
+元気な ガキどもの<line>
+せわが たいへんなママだ<wait><line>
+スタフィーが<line>
+めんどうみてやれば<line>
+いいんだ<end>
+
+
+//POINTER #270 @ $27B4D8 - STRING #270 @ $27872F
+
+#W32($27B4D8)
+どこさがしても<line>
+こんな きれいなひとは<line>
+いねーぞっ!<wait><line>
+だれよりも カッコいい<line>
+オレさまと おにあいだろ?<end>
+
+
+//POINTER #271 @ $27B4DC - STRING #271 @ $27876B
+
+#W32($27B4DC)
+『サンゴショウ』の<line>
+ボスだな<wait><line>
+おかしな グルグル回る<line>
+カイガラに のってるが・・<line>
+ヤツは なんなんだ?<end>
+
+
+//POINTER #272 @ $27B4E0 - STRING #272 @ $2787A6
+
+#W32($27B4E0)
+どっからともなく<line>
+近よって来るんだよな<wait><line>
+しばらくしたら きえるし<line>
+きみがわるいぞ<end>
+
+
+//POINTER #273 @ $27B4E4 - STRING #273 @ $2787D5
+
+#W32($27B4E4)
+下を とおろうとすると<line>
+きゅうに おりて来て<line>
+ジャマするぞ!<wait><line>
+ちょっと ビックリして<line>
+くやしいんだ!<end>
+
+
+//POINTER #274 @ $27B4E8 - STRING #274 @ $27880F
+
+#W32($27B4E8)
+グルグル回ってたけど<line>
+いったいなんなんだ?<line>
+コイツは・・・・<wait><line>
+オレさまは しゃっきんで<line>
+クビが回らない・・って<line>
+なにいわせるんだ!<end>
+
+
+//POINTER #275 @ $27B4EC - STRING #275 @ $278859
+
+#W32($27B4EC)
+オレさまに みむきもせず<line>
+せわしなく 泳いでいたぞ<wait><line>
+でも 同じトコロしか<line>
+泳げねえみたいだ・・・・<end>
+
+
+//POINTER #276 @ $27B4F0 - STRING #276 @ $278891
+
+#W32($27B4F0)
+いったい 足は<line>
+なんぼんあるんだ?<wait><line>
+オレさまに あわせて<line>
+うごくのもやめろって<line>
+いいたいがな!<end>
+
+
+//POINTER #277 @ $27B4F4 - STRING #277 @ $2788C8
+
+#W32($27B4F4)
+バタバタと ヒレを<line>
+うごかして 泳いでいたな<wait><line>
+かべに ぶつかっても<line>
+しばらく ほうこうを<line>
+かえねえのは わらったぞ!<end>
+
+
+//POINTER #278 @ $27B4F8 - STRING #278 @ $27890A
+
+#W32($27B4F8)
+みたとおり ワルそうな<line>
+かおのテキだ!<wait><line>
+カッコいい オレさまには<line>
+どうやったって できねえ<line>
+かおだぜ!<end>
+
+
+//POINTER #279 @ $27B4FC - STRING #279 @ $278945
+
+#W32($27B4FC)
+トゲだらけの<line>
+キケンきわまりない<line>
+ヤロウだ!<wait><line>
+たまにトゲひっこめるから<line>
+そのときが たおす<line>
+チャンスだぞ!<end>
+
+
+//POINTER #280 @ $27B500 - STRING #280 @ $278983
+
+#W32($27B500)
+『スピンアタック』に<line>
+はんのうして おそってくる<line>
+気のつよいテキだ!<wait><line>
+コイツ!オレさまにまで<line>
+むかってきやがって<line>
+みのほど知らずめ!<end>
+
+
+//POINTER #281 @ $27B504 - STRING #281 @ $2789CE
+
+#W32($27B504)
+ヒラヒラと ゆうがに<line>
+とんでいる ノンキな<line>
+ヒラメだ!<wait><line>
+オレさまも たまには<line>
+ゆっくり そらを<line>
+とんでみたいぞ!<end>
+
+
+//POINTER #282 @ $27B508 - STRING #282 @ $278A0F
+
+#W32($27B508)
+ぜんしんノコギリの<line>
+みた目どおり キケンな<line>
+ヤツだ!<wait><line>
+いったい どこから<line>
+あんなノコギリを<line>
+ひろってきたんだ?<end>
+
+
+//POINTER #283 @ $27B50C - STRING #283 @ $278A4F
+
+#W32($27B50C)
+デンキをおびている<line>
+でっけえハサミが<line>
+コイツのじまんらしいが・・<wait><line>
+オレさまの リッパな<line>
+カイガラに くらべたら<line>
+ちっぽけなモンだぜ!<end>
+
+
+//POINTER #284 @ $27B510 - STRING #284 @ $278A9A
+
+#W32($27B510)
+バカでっかいから<line>
+のみこまれると なかなか<line>
+だっしゅつできねえな!<wait><line>
+コイツも いいかげん<line>
+いやしいこと<line>
+やめろってんだ!<end>
+
+
+//POINTER #285 @ $27B514 - STRING #285 @ $278ADF
+
+#W32($27B514)
+なんか えらそうにしてて<line>
+オレさまは 気にくわねえ!<wait><line>
+こんなヤツの とっくんで<line>
+スタフィーは スピンが<line>
+つよくなったのか・・・・<end>
+
+
+//POINTER #286 @ $27B518 - STRING #286 @ $278B27
+
+#W32($27B518)
+どこさがしても<line>
+こんな きれいなひとは<line>
+いねーぞっ・・・・・<wait><line>
+・・・・・うそっ<line>
+ハデヒラリさんがいちばん!<end>
+
+
+//POINTER #287 @ $27B51C - STRING #287 @ $278B64
+
+#W32($27B51C)
+ここのチビ すぐなくから<line>
+にがてだ<wait><line>
+オレさまの かおみて<line>
+ないたんだぞ!<end>
+
+
+//POINTER #288 @ $27B520 - STRING #288 @ $278B8F
+
+#W32($27B520)
+クジラの ハラの中を<line>
+パトロールしてるはず・・<wait><line>
+なのに だっしゅつするの<line>
+くろうしたよなぁ<end>
+
+
+//POINTER #289 @ $27B524 - STRING #289 @ $278BC3
+
+#W32($27B524)
+じいさんのくせに<line>
+シャレた サングラスなんか<line>
+かけやがって・・・<wait><line>
+スタフィーも なぜか<line>
+サングラスは すきらしいぞ<line>
+にあってねえくせに・・・<end>
+
+
+//POINTER #290 @ $27B528 - STRING #290 @ $278C12
+
+#W32($27B528)
+マモノに つかまってたが<line>
+オレさまの おかげで<line>
+たすかったヤツだ<wait><line>
+せっかく たすけたのに<line>
+いいコトも なかったな!<end>
+
+
+//POINTER #291 @ $27B52C - STRING #291 @ $278C53
+
+#W32($27B52C)
+『ザショウクジラ』の中で<line>
+あばれてたボスだ<wait><line>
+カベに ぶつけて<line>
+じばくさせるアイデアは<line>
+われながら すげえだろ!<end>
+
+
+//POINTER #292 @ $27B530 - STRING #292 @ $278C92
+
+#W32($27B530)
+氷の上を<line>
+はしり回っていたな・・・・<wait><line>
+上を とおろうとすると<line>
+ずつきを するような<line>
+気のつよいヤツだ!<end>
+
+
+//POINTER #293 @ $27B534 - STRING #293 @ $278CCD
+
+#W32($27B534)
+コイツは 氷の上を<line>
+ノロノロと はってたぞ!<wait><line>
+みかけは オレさまと<line>
+同じぐらい カワイイが<line>
+テキだぞ テキ!<end>
+
+
+//POINTER #294 @ $27B538 - STRING #294 @ $278D0B
+
+#W32($27B538)
+さむい 海の中で<line>
+やたら 元気に泳いで<line>
+いるんだよな<wait><line>
+まあ そんなところが<line>
+オレさまにとって ジャマに<line>
+なるのだが・・・・<end>
+
+
+//POINTER #295 @ $27B53C - STRING #295 @ $278D51
+
+#W32($27B53C)
+なんで コイツのカイガラは<line>
+氷で できてるんだ?<wait><line>
+しかも なんでカイガラを<line>
+とばすんだ?<end>
+
+
+//POINTER #296 @ $27B540 - STRING #296 @ $278D84
+
+#W32($27B540)
+よくみりゃ からだのトコ<line>
+ホネだけじゃねーか!<line>
+ブキミなヤツだな!<wait><line>
+おまけに なんか ぶつけて<line>
+くるしよぉ・・・・<end>
+
+
+//POINTER #297 @ $27B544 - STRING #297 @ $278DC5
+
+#W32($27B544)
+あなに かくれてて<line>
+オレさまが 近づくと<line>
+とびだして来るんだ<wait><line>
+しっかし まだ シッポが<line>
+みえねえって・・・・・・<line>
+どれだけ 長いんだ?<end>
+
+
+//POINTER #298 @ $27B548 - STRING #298 @ $278E11
+
+#W32($27B548)
+マヌケ面してやがるが<line>
+これでも いちおう<line>
+テキみたいだな・・・・<wait><line>
+コイツの上にのったら<line>
+トランポリンみたいで<line>
+ちょっとたのしかったぞ!<end>
+
+
+//POINTER #299 @ $27B54C - STRING #299 @ $278E5D
+
+#W32($27B54C)
+りょこうが しゅみの<line>
+ちょっと へんなヤツだ!<wait><line>
+そういや オレさまも<line>
+ハデヒラリさんと<line>
+りょこうしたかったな・・・<end>
+
+
+//POINTER #300 @ $27B550 - STRING #300 @ $278E9E
+
+#W32($27B550)
+キツツキじゃねえぞ!<line>
+カチツキーだ!<wait><line>
+キツツキのクチバシ<line>
+みたいなヤリもってるから<line>
+そうよばれてるらしい・・・<end>
+
+
+//POINTER #301 @ $27B554 - STRING #301 @ $278EDD
+
+#W32($27B554)
+ヘンテコな なまえだが<line>
+けっこう てごわいぞ!<wait><line>
+コイツのほかにも<line>
+しんせきが なんびきか<line>
+いるらしい・・・・<end>
+
+
+//POINTER #302 @ $27B558 - STRING #302 @ $278F1B
+
+#W32($27B558)
+いつもは てんじょうに<line>
+はりついてる ノンキな<line>
+ヤツだ・・・・<wait><line>
+それにしても マヌケな<line>
+かおだなあ・・・・<end>
+
+
+//POINTER #303 @ $27B55C - STRING #303 @ $278F58
+
+#W32($27B55C)
+大むかしから<line>
+生きているらしい・・・・<wait><line>
+オレさまも できれば<line>
+長生きしたい<line>
+もんだなあ・・・・<end>
+
+
+//POINTER #304 @ $27B560 - STRING #304 @ $278F8F
+
+#W32($27B560)
+いつもは おこっているが<line>
+大きな おとをきくと<line>
+まるまってしまうぞ!<wait><line>
+なんて おくびょうな<line>
+ヤツだ! なさけない・・・<end>
+
+
+//POINTER #305 @ $27B564 - STRING #305 @ $278FD2
+
+#W32($27B564)
+カイガラから デンキを<line>
+出して いかくする<line>
+いただけねえ ヤツだ!<wait><line>
+オレさまは デンキなんて<line>
+出ねえが・・・・<line>
+どうなってんだ?<end>
+
+
+//POINTER #306 @ $27B568 - STRING #306 @ $27901B
+
+#W32($27B568)
+シャンデリアみたいな<line>
+すがたから なまえが<line>
+付いたらしい・・・・<wait><line>
+コイツはテキじゃねえぞ!<line>
+ちょっとだけ いいヤツ<line>
+みたいだ・・・・<end>
+
+
+//POINTER #307 @ $27B56C - STRING #307 @ $279066
+
+#W32($27B56C)
+トラの『きぐるみ』をきた<line>
+おもしろいヤツだ!<wait><line>
+けっこう いいヤツだって<line>
+知ってるだろ!?<end>
+
+
+//POINTER #308 @ $27B570 - STRING #308 @ $279099
+
+#W32($27B570)
+よわっちいクセに<line>
+マモノに ケンカをうって<line>
+氷づけに されたんだ<wait><line>
+たすけるのに オレさまが<line>
+どれだけくろうしたか・・・<end>
+
+
+//POINTER #309 @ $27B574 - STRING #309 @ $2790DC
+
+#W32($27B574)
+みょうなヤツに<line>
+すかれちまったぜ<wait><line>
+いいヤツなんだが・・・・・<line>
+えんりょさせてもらう!<end>
+
+
+//POINTER #310 @ $27B578 - STRING #310 @ $27910D
+
+#W32($27B578)
+ゴワス ゴワスって<line>
+おかしな はなしかたをする<line>
+ヤツだったな<wait><line>
+あのカッコ・・・・<line>
+いつもは なにしてんだろ?<end>
+
+
+//POINTER #311 @ $27B57C - STRING #311 @ $27914B
+
+#W32($27B57C)
+コイツ はらがたつっ!<line>
+オレさまを マモノと<line>
+かんちがいしやがって!<wait><line>
+オレさまみたく カッコいい<line>
+マモノが いるかっつーの!<end>
+
+
+//POINTER #312 @ $27B580 - STRING #312 @ $279191
+
+#W32($27B580)
+キザなヤツで<line>
+オレさまは きらいだ!<wait><line>
+こんなヤツの ところに<line>
+ヒラリンさんを<line>
+つれてくことに なるとは!<end>
+
+
+//POINTER #313 @ $27B584 - STRING #313 @ $2791CD
+
+#W32($27B584)
+・・・・・・・・・・・<line>
+おもいだしたくねえぞ!<line>
+チクショウ・・・<wait><line>
+オレさまは ひとまえで<line>
+イチャイチャするヤツらが<line>
+だいっきらいなんだっ!<end>
+
+
+//POINTER #314 @ $27B588 - STRING #314 @ $27921B
+
+#W32($27B588)
+きあいが 入ったときは<line>
+ホントに メラメラと<line>
+もえるんだってよ<wait><line>
+ゆでハマグリに されそうで<line>
+ゆだんならねえな!<end>
+
+
+//POINTER #315 @ $27B58C - STRING #315 @ $27925A
+
+#W32($27B58C)
+つめたくなった おんせんに<line>
+入ってたな<wait><line>
+つめたいんだったら<line>
+やめときゃいいのに・・・・<end>
+
+
+//POINTER #316 @ $27B590 - STRING #316 @ $27928C
+
+#W32($27B590)
+コイツとの しょうぶは<line>
+はくねつしたなあ・・<wait><line>
+でも はんしゃしんけい<line>
+バツグンのオレさまには<line>
+だれもかなわねーぜ!<end>
+
+
+//POINTER #317 @ $27B594 - STRING #317 @ $2792CD
+
+#W32($27B594)
+『氷の海』で たたかった<line>
+ボスだな・・・・<wait><line>
+でかいツノが こわいが<line>
+まっすぐ とっしんして来る<line>
+だけだぜ!<end>
+
+
+//POINTER #318 @ $27B598 - STRING #318 @ $27930A
+
+#W32($27B598)
+くらいところで グルグルと<line>
+同じところを 泳いでた<wait><line>
+ぜったい くらいヤツだ<line>
+そうにちがいないっ!<end>
+
+
+//POINTER #319 @ $27B59C - STRING #319 @ $279341
+
+#W32($27B59C)
+アタマに ライトがついてて<line>
+まわりを てらしてたな<wait><line>
+・・・『ふかい海』には<line>
+かわったヤツが おおいな<end>
+
+
+//POINTER #320 @ $27B5A0 - STRING #320 @ $27937A
+
+#W32($27B5A0)
+せなかの ランプが<line>
+クルクル回りながら<line>
+ひかってたな<wait><line>
+なにか あるのかって<line>
+思ったら どうも<line>
+そうじゃないらしい・・・<end>
+
+
+//POINTER #321 @ $27B5A4 - STRING #321 @ $2793BE
+
+#W32($27B5A4)
+くらやみで 目だけ<line>
+チカチカ ひかって<line>
+なんか こええよ!<wait><line>
+オレさまのばあい 目だけ<line>
+出していたら カワイイって<line>
+いわれるんだよなぁ<end>
+
+
+//POINTER #322 @ $27B5A8 - STRING #322 @ $279409
+
+#W32($27B5A8)
+くろい カタマリが<line>
+ういてるだけかと 思って<line>
+近づいたら・・・・・・<wait><line>
+きゅうに 目をあけて<line>
+おそって来やがった!<line>
+おどかしやがってー!<end>
+
+
+//POINTER #323 @ $27B5AC - STRING #323 @ $279455
+
+#W32($27B5AC)
+ちっこい ちょうちんを<line>
+付けて ユラユラと<line>
+泳いでたぞ!<wait><line>
+こんなヤツは ちっとも<line>
+こわくねーなっ!<end>
+
+
+//POINTER #324 @ $27B5B0 - STRING #324 @ $27948E
+
+#W32($27B5B0)
+近づいてみたら<line>
+びっくりしたぞ!<wait><line>
+バッって カサがひらいて<line>
+にらまれたからな<end>
+
+
+//POINTER #325 @ $27B5B4 - STRING #325 @ $2794BB
+
+#W32($27B5B4)
+さすがの オレさまも<line>
+コイツが ふさいでいる<line>
+つうろは とおれねえ<wait><line>
+しっかし まさか あんな<line>
+じゃくてんが あったとは!<end>
+
+
+//POINTER #326 @ $27B5B8 - STRING #326 @ $2794FF
+
+#W32($27B5B8)
+ふだんは ねているが<line>
+『スピンアタック』をすると<line>
+おきだす イヤなヤツだ!<wait><line>
+どうせなら ずーっと<line>
+ねてやがれってんだ!<end>
+
+
+//POINTER #327 @ $27B5BC - STRING #327 @ $279542
+
+#W32($27B5BC)
+ホネでできた ぼうしが<line>
+おきにいりらしい・・・・<wait><line>
+・・・・にしても!<line>
+サイズが あってねーぞ<line>
+デ カ す ぎっ!<end>
+
+
+//POINTER #328 @ $27B5C0 - STRING #328 @ $279582
+
+#W32($27B5C0)
+ポンポンと タマを出す<line>
+きもちわるいヤツだ<wait><line>
+うわさでは ヒトくいそう<line>
+らしいぞ!<line>
+・・・ヒトデは くうかな?<end>
+
+
+//POINTER #329 @ $27B5C4 - STRING #329 @ $2795C0
+
+#W32($27B5C4)
+おっ コウモリのような<line>
+ヤツだなぁ!<wait><line>
+なんで 海のそこに<line>
+こんなヤツがいるんだ?<line>
+これもオーグラのしわざ?<end>
+
+
+//POINTER #330 @ $27B5C8 - STRING #330 @ $2795FD
+
+#W32($27B5C8)
+オーグラのマホウで<line>
+ロボットになっちまった<line>
+らしい・・・・<wait><line>
+でも ミサイルこうげきとか<line>
+そういうのは ナシだ<line>
+ハンパなヤツめ!<end>
+
+
+//POINTER #331 @ $27B5CC - STRING #331 @ $279645
+
+#W32($27B5CC)
+すいりゅうを ひたすら<line>
+のぼる 元気な ヤツだ!<wait><line>
+オレさまは すいりゅうは<line>
+きらいだ!<line>
+えらい目に あったからな!<end>
+
+
+//POINTER #332 @ $27B5D0 - STRING #332 @ $279686
+
+#W32($27B5D0)
+ようがんから とび出す<line>
+メイワクな ヤツだ!<wait><line>
+ジャマなんだよな<line>
+こういうヤツは<line>
+ぜったい きらわれものだ<end>
+
+
+//POINTER #333 @ $27B5D4 - STRING #333 @ $2796C2
+
+#W32($27B5D4)
+よわそうなんだが・・・・<line>
+とにかく あつい!!<wait><line>
+オレさまは ハートが<line>
+とにかく あついぜ!!!<end>
+
+
+//POINTER #334 @ $27B5D8 - STRING #334 @ $2796F8
+
+#W32($27B5D8)
+くさった サカナだ!<line>
+においそうだな・・・・<wait><line>
+にても やいても<line>
+くえねえぞ<end>
+
+
+//POINTER #335 @ $27B5DC - STRING #335 @ $279724
+
+#W32($27B5DC)
+つちの中で<line>
+モジモジしやがって!<wait><line>
+そんなことじゃあ<line>
+おんなの子に<line>
+モテねえぞ!<end>
+
+
+//POINTER #336 @ $27B5E0 - STRING #336 @ $279753
+
+#W32($27B5E0)
+カイガラが チカチカしてて<line>
+にぎやかだな・・・・<wait><line>
+でも だまされるな!<line>
+さわったら エライ目に<line>
+あうんだぞ<end>
+
+
+//POINTER #337 @ $27B5E4 - STRING #337 @ $279790
+
+#W32($27B5E4)
+まさか じめんの下まで<line>
+ぼうけんすることに<line>
+なるとは!<wait><line>
+しかし『もぐらタンク』って<line>
+のりもの? 生きもの?<end>
+
+
+//POINTER #338 @ $27B5E8 - STRING #338 @ $2797CD
+
+#W32($27B5E8)
+『ふかい海』で<line>
+あやしい けんきゅうを<line>
+していた じいさんだ!<wait><line>
+はじめは ユウレイかと<line>
+おもったぞ!・・・ったく!<end>
+
+
+//POINTER #339 @ $27B5EC - STRING #339 @ $27980E
+
+#W32($27B5EC)
+・・・せっかく くろうして<line>
+コイツの がっきを<line>
+さがしてやったが・・・・<wait><line>
+よけいなことを したか?<line>
+ヘ タ ク ソッ !<end>
+
+
+//POINTER #340 @ $27B5F0 - STRING #340 @ $279852
+
+#W32($27B5F0)
+なんで タルの中に<line>
+入ってんだ?<wait><line>
+オレさまも 入ってみるか!<line>
+・・・・・・・・・・・・・<line>
+・・・・・・・・・・やめた<end>
+
+
+//POINTER #341 @ $27B5F4 - STRING #341 @ $279894
+
+#W32($27B5F4)
+でかいタルに にくたらしい<line>
+目だまが かいてあると<line>
+思ったら コイツだった<wait><line>
+たのみを きいてやったし<line>
+もう オレさまには<line>
+あたまが 上がらねえはず!<end>
+
+
+//POINTER #342 @ $27B5F8 - STRING #342 @ $2798E7
+
+#W32($27B5F8)
+まっくらなトコでも<line>
+コイツがいれば あんしん!<wait><line>
+もっと こんじょう出して<line>
+ずーっと ひかってくれたら<line>
+いうことねえのに!<end>
+
+
+//POINTER #343 @ $27B5FC - STRING #343 @ $27992B
+
+#W32($27B5FC)
+こんなワガママなヤツは<line>
+もう 知らねえっ!<wait><line>
+しかも あのタルは<line>
+すげえ カッコわるいと<line>
+思うぞっ!<end>
+
+
+//POINTER #344 @ $27B600 - STRING #344 @ $279964
+
+#W32($27B600)
+大うそつきだな<line>
+コイツは・・・・<wait><line>
+なにを いっても<line>
+しんようするなっ!<end>
+
+
+//POINTER #345 @ $27B604 - STRING #345 @ $27998E
+
+#W32($27B604)
+かいていの そうじを<line>
+生きがいに してる<line>
+へんなヤローだ!<wait><line>
+スタフィーも<line>
+こんなヤツと なんで<line>
+そうじたいけつ してんだ?<end>
+
+
+//POINTER #346 @ $27B608 - STRING #346 @ $2799D4
+
+#W32($27B608)
+『ふかい海』で たたかった<line>
+ボスだな・・・・<wait><line>
+すがたを けせるのは<line>
+うらやましいぞ!<end>
+
+
+//POINTER #347 @ $27B60C - STRING #347 @ $279A05
+
+#W32($27B60C)
+ジャンプするとは<line>
+思わなかったぞ!<wait><line>
+ビックリさせられたし<line>
+ぜんぶ たおしてやる!<end>
+
+
+//POINTER #348 @ $27B610 - STRING #348 @ $279A34
+
+#W32($27B610)
+あなから 目だまだけを<line>
+のぞかせて オレさまが<line>
+とおるのを まってるが・・<wait><line>
+まだまだ あまいな!<line>
+オレさまのほうが<line>
+うまく かくれられるぞ!<end>
+
+
+//POINTER #349 @ $27B614 - STRING #349 @ $279A83
+
+#W32($27B614)
+なんか・・・・<line>
+オバケみたいなんだが・・・<wait><line>
+ちっとも こわくねえ<line>
+こんなヤツばっかりなら<line>
+きらくなのにな!<end>
+
+
+//POINTER #350 @ $27B618 - STRING #350 @ $279AC0
+
+#W32($27B618)
+まるまって 泳ぐトコが<line>
+かわってるな<wait><line>
+目が 回らないなら<line>
+ほめてやろう<end>
+
+
+//POINTER #351 @ $27B61C - STRING #351 @ $279AEA
+
+#W32($27B61C)
+どこからともなく たくさん<line>
+あらわれて オレさまを<line>
+おいかけやがって!<wait><line>
+たばになって かかっても<line>
+テキじゃねーがな!<end>
+
+
+//POINTER #352 @ $27B620 - STRING #352 @ $279B2C
+
+#W32($27B620)
+アッカンベーって・・・<line>
+オレさまを おちょくって<line>
+タダですむと 思うなよ!<wait><line>
+オレさまも おんなじように<line>
+アッカンベー・・・・・<line>
+できないじゃねーか!<end>
+
+
+//POINTER #353 @ $27B624 - STRING #353 @ $279B7F
+
+#W32($27B624)
+ドクロが あるいてて<line>
+ほんのちょっとだけ<line>
+こわかったぞ!<wait><line>
+でも 中のヤツの<line>
+いたずらだったぜ!<line>
+オバケなんて いねえよな!<end>
+
+
+//POINTER #354 @ $27B628 - STRING #354 @ $279BC5
+
+#W32($27B628)
+ブンブンとびまわって<line>
+うっとうしいぞ!<wait><line>
+『ちんぼつせん』<line>
+そんなに いそいで<line>
+どこへ行く!<end>
+
+
+//POINTER #355 @ $27B62C - STRING #355 @ $279BFA
+
+#W32($27B62C)
+出たーっ!<line>
+ユウレイだ! ユウレイ!<wait><line>
+どうも オレさまは<line>
+ユウレイが にがてだな<line>
+・・・だれにも いうなよ!<end>
+
+
+//POINTER #356 @ $27B630 - STRING #356 @ $279C38
+
+#W32($27B630)
+目だちたがりやの<line>
+メダツカだ!<wait><line>
+オレさまを さしおいて<line>
+目だとうとするなんて・・・<line>
+みのほどしらずな・・・・<end>
+
+
+//POINTER #357 @ $27B634 - STRING #357 @ $279C76
+
+#W32($27B634)
+ヤツの スミこうげきには<line>
+さすがのオレさまも<line>
+てをやいたな・・・・<wait><line>
+あんまりジャマすっと<line>
+スルメにして<line>
+くっちまうぞっ!<end>
+
+
+//POINTER #358 @ $27B638 - STRING #358 @ $279CBB
+
+#W32($27B638)
+みるからにシビレそうな<line>
+ヤツだったな・・・・<wait><line>
+オレさまはかっこよさで<line>
+おんなの子を<line>
+シビレさせるぜ・・へへっ!<end>
+
+
+//POINTER #359 @ $27B63C - STRING #359 @ $279CFA
+
+#W32($27B63C)
+しつこくおいかけてくる<line>
+イヤなヤツ!<wait><line>
+そういや オレさまって<line>
+いろんなヤツに おわれて<line>
+ばかりいたなぁ・・・・<end>
+
+
+//POINTER #360 @ $27B640 - STRING #360 @ $279D39
+
+#W32($27B640)
+なまえは きれいだが<line>
+いちおうテキだ!<wait><line>
+オレさまを ゆだん<line>
+させようったって<line>
+そうは いかねえぞ!<end>
+
+
+//POINTER #361 @ $27B644 - STRING #361 @ $279D72
+
+#W32($27B644)
+とぼけたかおで<line>
+おそってくる<line>
+ノンキなテキだ!<wait><line>
+あと このヘアスタイルは<line>
+なんなんだ?<line>
+カッコわりいぞ!<end>
+
+
+//POINTER #362 @ $27B648 - STRING #362 @ $279DAF
+
+#W32($27B648)
+かわいいかおを しているが<line>
+デンキが あぶねえぞ!<wait><line>
+イカン! イカン!<line>
+どうも かわいい子に<line>
+よわいなぁ・・・・<end>
+
+
+//POINTER #363 @ $27B64C - STRING #363 @ $279DEF
+
+#W32($27B64C)
+エビのくせに<line>
+そらをとぶ<line>
+ナマイキな ヤツだ!<wait><line>
+オレさまは こういう<line>
+ナマイキな ヤツが<line>
+だいきらいだぞ!<end>
+
+
+//POINTER #364 @ $27B650 - STRING #364 @ $279E2D
+
+#W32($27B650)
+『かいていしんでん』で<line>
+ボートレーサーを<line>
+やっていたらしい・・・・<wait><line>
+オーグラにあらされて<line>
+今では レースに<line>
+出ていないんだとさ・・・<end>
+
+
+//POINTER #365 @ $27B654 - STRING #365 @ $279E78
+
+#W32($27B654)
+コイツには まずいトコを<line>
+みられたぜ!<wait><line>
+きゅうに でてきたから<line>
+おどろいただけだろっ!<end>
+
+
+//POINTER #366 @ $27B658 - STRING #366 @ $279EAA
+
+#W32($27B658)
+オレさまの じゃまをして<line>
+カギをぬすみやがって!<wait><line>
+まあ こんなヤツから<line>
+うばいかえすなんて<line>
+かんたんなことだがな!<end>
+
+
+//POINTER #367 @ $27B65C - STRING #367 @ $279EEB
+
+#W32($27B65C)
+子供と あそんでくれ?<line>
+オレさまは ひまじゃねえ!<wait><line>
+そういうシゴトは<line>
+スタフィーに ピッタリだ!<end>
+
+
+//POINTER #368 @ $27B660 - STRING #368 @ $279F22
+
+#W32($27B660)
+『ちんぼつせん』の<line>
+ボスだな<wait><line>
+おいかけられたのは<line>
+だれのせいだったかな!<end>
+
+
+//POINTER #369 @ $27B664 - STRING #369 @ $279F4D
+
+#W32($27B664)
+べんとうに 入ってたが<line>
+海に にげだしたらしい<wait><line>
+・・・・ホントかよっ!<end>
+
+
+//POINTER #370 @ $27B668 - STRING #370 @ $279F76
+
+#W32($27B668)
+オレさまに むかって<line>
+ボールを けってくる<line>
+けしからんヤツだ!<wait><line>
+くそーっ!<line>
+けりかえせなくて<line>
+ハラが たってるんだ!<end>
+
+
+//POINTER #371 @ $27B66C - STRING #371 @ $279FB9
+
+#W32($27B66C)
+気がついたら まわりを<line>
+3びきで かこまれてるぞ!<wait><line>
+しかも どうじに<line>
+おそって来たし ビビった!<end>
+
+
+//POINTER #372 @ $27B670 - STRING #372 @ $279FF0
+
+#W32($27B670)
+ときどき どっからともなく<line>
+わいて来るんだよな<wait><line>
+どいつも こいつも<line>
+近づいて来るし<line>
+うっとうしいヤツらだ!<end>
+
+
+//POINTER #373 @ $27B674 - STRING #373 @ $27A02D
+
+#W32($27B674)
+オレさまの つよさを<line>
+知っているから<line>
+すぐ にげて行くぞ!<wait><line>
+スタフィーから<line>
+にげるのは<line>
+キライだかららしいぞ!<end>
+
+
+//POINTER #374 @ $27B678 - STRING #374 @ $27A06D
+
+#W32($27B678)
+カイガラを しょったままで<line>
+よく 泳げるぜ!<wait><line>
+でも ヨロヨロしてるな<line>
+どんくさいんじゃねえの?<end>
+
+
+//POINTER #375 @ $27B67C - STRING #375 @ $27A0A3
+
+#W32($27B67C)
+よわそうな ヤツなのに<line>
+オレさまを とおせんぼ<line>
+しようとするんだ<wait><line>
+えんりょなく たおして<line>
+とおるけどなっ!<end>
+
+
+//POINTER #376 @ $27B680 - STRING #376 @ $27A0E0
+
+#W32($27B680)
+ねむりながら 泳いでる<line>
+ヤル気の なさそうな<line>
+ヤツだ!<wait><line>
+でも オレさまが<line>
+近づいたら いちおう<line>
+おいかけて来るぞ!<end>
+
+
+//POINTER #377 @ $27B684 - STRING #377 @ $27A122
+
+#W32($27B684)
+せまいところを<line>
+ノロノロと およいでて<line>
+じゃまなんだよな<wait><line>
+コイツも オレさまを<line>
+おいかけて<line>
+来やがったな・・・<end>
+
+
+//POINTER #378 @ $27B688 - STRING #378 @ $27A162
+
+#W32($27B688)
+プクク・・・<line>
+すっとぼけた かおを<line>
+してるだろ?<wait><line>
+スタフィーと いい<line>
+しょうぶだぜ!<end>
+
+
+//POINTER #379 @ $27B68C - STRING #379 @ $27A194
+
+#W32($27B68C)
+トゲが 出ているときは<line>
+近づくな!<wait><line>
+よわそうなヤツって<line>
+すぐ トゲを出すから<line>
+キライだ!<end>
+
+
+//POINTER #380 @ $27B690 - STRING #380 @ $27A1C8
+
+#W32($27B690)
+せまいトコで<line>
+とびまわってたんだ<wait><line>
+だから たおすのには<line>
+ひとくろうだったぞ・・<end>
+
+
+//POINTER #381 @ $27B694 - STRING #381 @ $27A1F6
+
+#W32($27B694)
+まっくろで<line>
+しょうたいふめいな<line>
+ヤツだ!<wait><line>
+そういえば なにかの<line>
+『えいが』で にたような<line>
+ヤツがいたなあ・・・<end>
+
+
+//POINTER #382 @ $27B698 - STRING #382 @ $27A236
+
+#W32($27B698)
+にくたらしい かおを<line>
+してやがるな・・・<wait><line>
+トゲを もってるから<line>
+正面からの<line>
+こうげきは ムダだぞ!<end>
+
+
+//POINTER #383 @ $27B69C - STRING #383 @ $27A26F
+
+#W32($27B69C)
+オーグラが トゲと<line>
+サカナを がったい<line>
+させてつくったらしい<wait><line>
+よけいなモン<line>
+つくりやがって!<end>
+
+
+//POINTER #384 @ $27B6A0 - STRING #384 @ $27A2A5
+
+#W32($27B6A0)
+いつも わらっている<line>
+ゼリーみたいなヤツだ!<wait><line>
+なんか うまそうに<line>
+みえるのは<line>
+オレさまだけか?<end>
+
+
+//POINTER #385 @ $27B6A4 - STRING #385 @ $27A2DC
+
+#W32($27B6A4)
+オーグラのまほうで<line>
+ダンゴムシが でかく<line>
+なりやがった!<wait><line>
+こんな ヤツとも<line>
+たたかうことに<line>
+なろうとは! とほほ・・<end>
+
+
+//POINTER #386 @ $27B6A8 - STRING #386 @ $27A31F
+
+#W32($27B6A8)
+はじめは 目だまだけで<line>
+とんでくる<line>
+ふしぎな ヤツだ<wait><line>
+オレさまも 目だまだけ<line>
+出すのは とくいだぞ!<end>
+
+
+//POINTER #387 @ $27B6AC - STRING #387 @ $27A359
+
+#W32($27B6AC)
+オーグラのまほうで<line>
+ブロックに いのちが<line>
+やどったテキだ!<wait><line>
+オーグラのヤロウ・・<line>
+なんでもアリか!<end>
+
+
+//POINTER #388 @ $27B6B0 - STRING #388 @ $27A392
+
+#W32($27B6B0)
+コイツって・・<line>
+なんで こんな ちいさな<line>
+ハネで とべるんだ?<wait><line>
+オレさまも その気になれば<line>
+とべるってことか?<end>
+
+
+//POINTER #389 @ $27B6B4 - STRING #389 @ $27A3D1
+
+#W32($27B6B4)
+オレさまも ほうきに<line>
+のりたかった・・<wait><line>
+・・・どーせムリだよ!<line>
+オレさまの カタチだと<line>
+すべりおちるからな!<end>
+
+
+//POINTER #390 @ $27B6B8 - STRING #390 @ $27A40F
+
+#W32($27B6B8)
+コイツも しょーがねえ<line>
+ヤツだよな<wait><line>
+オレさまを マモノと<line>
+まちがうなんて<line>
+ホント みる目が ねえぜ!<end>
+
+
+//POINTER #391 @ $27B6BC - STRING #391 @ $27A449
+
+#W32($27B6BC)
+じつは かなりビビった!<line>
+かおが こわすぎるぜ!<wait><line>
+スタフィーが クスリを<line>
+わたすまえに たおして<line>
+おきたかったぞ!<end>
+
+
+//POINTER #392 @ $27B6C0 - STRING #392 @ $27A48A
+
+#W32($27B6C0)
+コ コイツとは もう<line>
+あいたくない!<wait><line>
+今 思い出しても<line>
+ゾッとする・・・<end>
+
+
+//POINTER #393 @ $27B6C4 - STRING #393 @ $27A4B5
+
+#W32($27B6C4)
+こんなヤツ ちっとも<line>
+オレさまに にてねえよ<wait><line>
+すっげえ へんなかたち<line>
+してるなっ!<end>
+
+
+//POINTER #394 @ $27B6C8 - STRING #394 @ $27A4E5
+
+#W32($27B6C8)
+カッコわるいヤツだなー!<line>
+なんで こんなのと<line>
+まちがわれたんだ?<wait><line>
+どっからみても オレさまが<line>
+ダントツだろ?<end>
+
+
+//POINTER #395 @ $27B6CC - STRING #395 @ $27A523
+
+#W32($27B6CC)
+ったく めんどくせえこと<line>
+させやがって・・・<wait><line>
+オレさまは ビリヤード<line>
+より ボーリングの<line>
+ほうが とくいなんだよっ!<end>
+
+
+//POINTER #396 @ $27B6D0 - STRING #396 @ $27A565
+
+#W32($27B6D0)
+『かいていしんでん』の<line>
+ボスだな!<wait><line>
+スタフィーの すがたを<line>
+まほうで マネしたんだ<end>
+
+
+//POINTER #397 @ $27B6D4 - STRING #397 @ $27A595
+
+#W32($27B6D4)
+そらに うかんだ 水の<line>
+まわりを あるいてたぞ!<wait><line>
+・・・マネするのは<line>
+やめとこう<line>
+おっこちそうだ!<end>
+
+
+//POINTER #398 @ $27B6D8 - STRING #398 @ $27A5CE
+
+#W32($27B6D8)
+ちっこい カミナリぐもか<line>
+オレさまの テキじゃねえ<wait><line>
+スタフィーは どうだか<line>
+知らねえけどな!<end>
+
+
+//POINTER #399 @ $27B6DC - STRING #399 @ $27A603
+
+#W32($27B6DC)
+すげえ とおくから<line>
+たびして来たらしいぞ!<wait><line>
+くもに のって<line>
+ゆっくりと のぼりてえのに<line>
+じゃまなんだよなぁ<end>
+
+
+//POINTER #400 @ $27B6E0 - STRING #400 @ $27A640
+
+#W32($27B6E0)
+すぐに にげだす<line>
+おくびょうなヤツだ!<wait><line>
+まるで だれかさん<line>
+みたいだぜ・・・って<line>
+オレさまじゃないぞ!<end>
+
+
+//POINTER #401 @ $27B6E4 - STRING #401 @ $27A67B
+
+#W32($27B6E4)
+よーくみろよ!<line>
+いろちがいのやつが<line>
+リーダーだ!<wait><line>
+リーダーを たおすと<line>
+子分どもは にげていくぞ!<line>
+なさけないやつらめ!<end>
+
+
+//POINTER #402 @ $27B6E8 - STRING #402 @ $27A6C0
+
+#W32($27B6E8)
+はしることが いきがいの<line>
+スポーツマン!<wait><line>
+マラソンたいかいで<line>
+ゆうしょうしたことも<line>
+あるらしいぞ!<end>
+
+
+//POINTER #403 @ $27B6EC - STRING #403 @ $27A6F9
+
+#W32($27B6EC)
+ただのワニが<line>
+マントひっさげて<line>
+とべるようになった!<wait><line>
+オレさまも マント<line>
+つければ とべるように<line>
+なるのかな?<end>
+
+
+//POINTER #404 @ $27B6F0 - STRING #404 @ $27A739
+
+#W32($27B6F0)
+メガネをかけた へんな<line>
+サメだ!<line>
+すごく 目がわるいらしい<wait><line>
+どーせ ゲームの<line>
+やりすぎが げんいんだろ?<end>
+
+
+//POINTER #405 @ $27B6F4 - STRING #405 @ $27A775
+
+#W32($27B6F4)
+そらとぶカエルだ!<line>
+コイツ どうやって<line>
+とんでいるんだ?<wait><line>
+ひょっとして<line>
+そせんは ムササビ?<end>
+
+
+//POINTER #406 @ $27B6F8 - STRING #406 @ $27A7AB
+
+#W32($27B6F8)
+しんじゅを いっぱい<line>
+かくしもっている<line>
+ありがたーいヤツ!<wait><line>
+とても めずらしいらしく<line>
+めったに みられない<line>
+らしいぞ!<end>
+
+
+//POINTER #407 @ $27B6FC - STRING #407 @ $27A7EF
+
+#W32($27B6FC)
+コイツは ようちゅうい!<line>
+うかつに近づくと<line>
+えらいことになる!<wait><line>
+オレさまなんか しばらく<line>
+においが とれなくて<line>
+なきそうになったぞ!<end>
+
+
+//POINTER #408 @ $27B700 - STRING #408 @ $27A83A
+
+#W32($27B700)
+からだが バネで<line>
+できているとは<line>
+なんて ふざけたヤローだ!<wait><line>
+しかも とび上がって<line>
+ビックリさせやがる!<line>
+とことん ナメたヤローだ!<end>
+
+
+//POINTER #409 @ $27B704 - STRING #409 @ $27A885
+
+#W32($27B704)
+そういや にたような<line>
+ヤツが ほかにも<line>
+いたなあ・・・<wait><line>
+どっちもおくびょうで<line>
+すぐに にげだして<line>
+いたっけ?<end>
+
+
+//POINTER #410 @ $27B708 - STRING #410 @ $27A8C4
+
+#W32($27B708)
+みみをハネにしながら<line>
+いつもリラックスしてる<line>
+イヌ???<wait><line>
+オレさまも たまには<line>
+リラックスしたいぞ!<line>
+・・・ったく!<end>
+
+
+//POINTER #411 @ $27B70C - STRING #411 @ $27A907
+
+#W32($27B70C)
+こわそうなかおで<line>
+いかくしているが<line>
+なんのことはない・・・<wait><line>
+大きなおとで あっさり<line>
+びびりやがる<line>
+おくびょうモンだ!<end>
+
+
+//POINTER #412 @ $27B710 - STRING #412 @ $27A94A
+
+#W32($27B710)
+大きな目が じまんの<line>
+きもちわるいテキだ!<wait><line>
+コイツが 目ぐすり<line>
+つかったら たいへん<line>
+だろうなあ・・・<end>
+
+
+//POINTER #413 @ $27B714 - STRING #413 @ $27A985
+
+#W32($27B714)
+ふだんは しっぽに<line>
+かくれているぞ!<wait><line>
+オレさまは いつも<line>
+じめんにかくれて・・・<line>
+・・・ちがうっ!<end>
+
+
+//POINTER #414 @ $27B718 - STRING #414 @ $27A9BE
+
+#W32($27B718)
+ちかづくと とっしん<line>
+してくる つよきな<line>
+テキだ!<wait><line>
+でも つよきなだけじゃ<line>
+オレさまには<line>
+かなわないぜ!ヘヘッ!<end>
+
+
+//POINTER #415 @ $27B71C - STRING #415 @ $27A9FF
+
+#W32($27B71C)
+いつもは てんじょうに<line>
+はりついている<line>
+サザエのテキだぞ!<wait><line>
+かんけいないが<line>
+サザエはうまいよなあ・・・<end>
+
+
+//POINTER #416 @ $27B720 - STRING #416 @ $27AA3A
+
+#W32($27B720)
+のりごこちが わるい<line>
+使えねえヤツだ!<wait><line>
+たのむから おっこちたとき<line>
+むかえに来いよ!<end>
+
+
+//POINTER #417 @ $27B724 - STRING #417 @ $27AA6B
+
+#W32($27B724)
+フルーツが こうぶつの<line>
+くいしんぼうな<line>
+でけえトリだ・・・<wait><line>
+すこしは スマートで<line>
+カッコイイ オレさまを<line>
+みならえってんだ!<end>
+
+
+//POINTER #418 @ $27B728 - STRING #418 @ $27AAB2
+
+#W32($27B728)
+オーグラが よび出した<line>
+しんえいたいの 1ぴき目だ<wait><line>
+すごく でかくなって<line>
+ビックリしたけど<line>
+あんまり つよくねえぞ!<end>
+
+
+//POINTER #419 @ $27B72C - STRING #419 @ $27AAF4
+
+#W32($27B72C)
+オーグラが よび出した<line>
+しんえいたいの 2ひき目だ<wait><line>
+にんそうのわるい<line>
+くもの のりものに<line>
+のってやがるぞ!<end>
+
+
+//POINTER #420 @ $27B730 - STRING #420 @ $27AB31
+
+#W32($27B730)
+オーグラが よび出した<line>
+しんえいたいの 3びき目だ<wait><line>
+ハサミで こうげきを<line>
+ガードするぞ!<end>
+
+
+//POINTER #421 @ $27B734 - STRING #421 @ $27AB64
+
+#W32($27B734)
+水の かたまりを<line>
+わたるのって タイミングが<line>
+むずかしいよな<wait><line>
+そんなとき コイツが<line>
+ウロウロしてると<line>
+はらがたつぞっ!<end>
+
+
+//POINTER #422 @ $27B738 - STRING #422 @ $27ABA8
+
+#W32($27B738)
+いわの かたまりなんだけど<line>
+じーっと こっちをみて<line>
+近づいて来やがる!<wait><line>
+水のかたまりの 外に<line>
+押しだされそうに なるぞ!<end>
+
+
+//POINTER #423 @ $27B73C - STRING #423 @ $27ABEC
+
+#W32($27B73C)
+タコのくせに わざわざ<line>
+そらをとんで<line>
+じゃましやがって!<wait><line>
+スミをかけたら<line>
+しょーちしねえぞっ!<end>
+
+
+//POINTER #424 @ $27B740 - STRING #424 @ $27AC23
+
+#W32($27B740)
+どこまでが カオなんだ?<line>
+へんなヤツ・・・<wait><line>
+オレさまみたいに<line>
+カッコよくなくて<line>
+ざんねんだな!<end>
+
+
+//POINTER #425 @ $27B744 - STRING #425 @ $27AC5A
+
+#W32($27B744)
+口を ガチガチならして<line>
+近づいて来るヤツだ!<wait><line>
+どこからともなく<line>
+あつまって来るし<line>
+やっかいだぞ!<end>
+
+
+//POINTER #426 @ $27B748 - STRING #426 @ $27AC92
+
+#W32($27B748)
+なんど たおしても<line>
+うごきだすんだよな<wait><line>
+どんな からだしてんだ?<line>
+まったく・・・<end>
+
+
+//POINTER #427 @ $27B74C - STRING #427 @ $27ACC1
+
+#W32($27B74C)
+オーグラが よこした<line>
+みはりだな・・・<wait><line>
+なんで かくれながら<line>
+すすまなきゃ<line>
+ならねえんだ? くそーっ!<end>
+
+
+//POINTER #428 @ $27B750 - STRING #428 @ $27ACFC
+
+#W32($27B750)
+いつのまにか まわりに<line>
+まとわりつきやがる<line>
+うっとうしいヤツらだ!<wait><line>
+オレさまは へんなヤツに<line>
+まとわりつかれるのは<line>
+もう ごめんだっ!<end>
+
+
+//POINTER #429 @ $27B754 - STRING #429 @ $27AD48
+
+#W32($27B754)
+ちょっと カワイイかも<line>
+知れねえが だまされるな<wait><line>
+オレさまたちと<line>
+なかよくする気は ねえと<line>
+思うぞ!<end>
+
+
+//POINTER #430 @ $27B758 - STRING #430 @ $27AD82
+
+#W32($27B758)
+自分のだいじな<line>
+カツラで こうげきして<line>
+きやがるぞ!<wait><line>
+なんて からだをはった<line>
+ヤツなんだ・・・<end>
+
+
+//POINTER #431 @ $27B75C - STRING #431 @ $27ADB9
+
+#W32($27B75C)
+いつもは トグロを<line>
+まいていて 近づくと<line>
+こうげきしてくるぞ!<wait><line>
+フエでも ふいたら<line>
+おどりだすのかな?<end>
+
+
+//POINTER #432 @ $27B760 - STRING #432 @ $27ADF4
+
+#W32($27B760)
+サカナのホネが<line>
+オーグラのまほうで<line>
+うごきだしたぞ!<wait><line>
+どんなにこうげきしても<line>
+たおせねえ<line>
+・・・いやなヤツだ!<end>
+
+
+//POINTER #433 @ $27B764 - STRING #433 @ $27AE34
+
+#W32($27B764)
+やたら口のでかい<line>
+きょうぼうなヤツだ!<wait><line>
+なに?オレさまは<line>
+たいどが でかいって?<end>
+
+
+//POINTER #434 @ $27B768 - STRING #434 @ $27AE63
+
+#W32($27B768)
+シャレた グラサン<line>
+なんか かけやがって・・<wait><line>
+さてはコイツ・・・<line>
+オレさまと おしゃれで<line>
+しょうぶするつもりか?<end>
+
+
+//POINTER #435 @ $27B76C - STRING #435 @ $27AEA3
+
+#W32($27B76C)
+なんだって からだが<line>
+コイルなんだ?<wait><line>
+そういや 『りか』の<line>
+じっけんで コイルは<line>
+よく使ったなぁ<end>
+
+
+//POINTER #436 @ $27B770 - STRING #436 @ $27AEDB
+
+#W32($27B770)
+カブトムシのマシーンだ!<wait><line>
+いいにくいから<line>
+ちぢめられたらしい・・・<line>
+かわいそうなヤツ・・・<end>
+
+
+//POINTER #437 @ $27B774 - STRING #437 @ $27AF0F
+
+#W32($27B774)
+いちおう おたすけ<line>
+キャラだぞ<wait><line>
+『きぐるみ』で ほえないと<line>
+出て来ねえのは<line>
+やる気がねえのかな?<end>
+
+
+//POINTER #438 @ $27B778 - STRING #438 @ $27AF47
+
+#W32($27B778)
+ただでさえ キケンな<line>
+クラゲに デンキまで<line>
+つきやがった!<wait><line>
+・・・かいすいよくでは<line>
+クラゲに ちゅういしろ!<end>
+
+
+//POINTER #439 @ $27B77C - STRING #439 @ $27AF85
+
+#W32($27B77C)
+メルトフィーの<line>
+コドモだ!<wait><line>
+からだは ちいさいが<line>
+きょうぼうさは<line>
+おやゆずりだぞ!<end>
+
+
+//POINTER #440 @ $27B780 - STRING #440 @ $27AFB6
+
+#W32($27B780)
+からだじゅう デンキに<line>
+おおわれているぞ!<wait><line>
+デンキを ムダに使って<line>
+どういうつもりだ!<end>
+
+
+//POINTER #441 @ $27B784 - STRING #441 @ $27AFE8
+
+#W32($27B784)
+たよりにならねえ<line>
+テンカイのヘイシだ!<wait><line>
+・・・ったく スタフィーの<line>
+なかまは よわっちい<line>
+ヤツばかりだぜ!<end>
+
+
+//POINTER #442 @ $27B788 - STRING #442 @ $27B025
+
+#W32($27B788)
+うるせえヤツらだったぞ!<line>
+オレさまは ガキは<line>
+にがてだ!<wait><line>
+どうせなら かわいい子が<line>
+まとわりついてくれ!<end>
+
+
+//POINTER #443 @ $27B78C - STRING #443 @ $27B061
+
+#W32($27B78C)
+コイツさえ あらわれなきゃ<line>
+オレさまは のんびり<line>
+くらしてたのに!<wait><line>
+この へんなヤツに<line>
+ふり回されっぱなしだ!<end>
+
